@@ -3,73 +3,200 @@
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   gap: 0.5rem;
-   border-radius: 0.5rem;
-   padding: 0.5rem 1rem;
    border: 1px solid;
    outline: none;
    cursor: pointer;
-   transition: box-shadow 0.3s ease-in-out, background-color 0.15s linear,
-      color 0.15s linear;
+   transition: all 0.15s linear, box-shadow 0.3s ease-in-out;
    z-index: inherit;
 }
 
-.ui-button.ui-button--wave {
-   animation: wave 0.3s ease-in-out;
-}
-
-@keyframes wave {
-   100% {
-      box-shadow: 0 0 0 5px transparent;
-   }
+.ui-button svg{
+   flex-shrink: 0;
 }
 
 /* COLORS*/
 
 /* Primary */
 
-.ui-button--color-primary {
+.ui-button.color-primary {
    box-shadow: 0 0 0 0 var(--primary-light);
 }
 
 /* filled */
-.ui-button--color-primary.ui-button--variant-filled {
+.ui-button.color-primary.variant-filled {
    background-color: var(--primary-main);
    border-color: var(--primary-main);
    color: var(--primary-contrast);
 }
 
 /* filled:hover */
-.ui-button--color-primary.ui-button--variant-filled:hover {
+.ui-button.color-primary.variant-filled:hover {
    background-color: var(--primary-dark);
+   border-color: var(--primary-dark);
 }
 
 /* outlined */
-.ui-button--color-primary.ui-button--variant-outlined {
+.ui-button.color-primary.variant-outlined {
    background-color: var(--primary-contrast);
    border-color: var(--primary-main);
    color: var(--primary-main);
 }
 
 /* outlined:over */
-.ui-button--color-primary.ui-button--variant-outlined:hover {
+.ui-button.color-primary.variant-outlined:hover {
    border-color: var(--primary-dark);
    color: var(--primary-dark);
 }
 
 /* ghost */
-.ui-button--color-primary.ui-button--variant-ghost {
+.ui-button.color-primary.variant-ghost {
    background-color: transparent;
    border-color: transparent;
    color: var(--primary-main);
 }
 
-.ui-button--color-primary.ui-button--variant-ghost:hover {
+/* ghost:hover */
+.ui-button.color-primary.variant-ghost:hover {
    background-color: var(--primary-light);
    color: var(--primary-contrast);
 }
 
-.ui-button--color-primary.ui-button--variant-ghost:active {
-   background-color: var(--primary-dark);
+/* ghost:active */
+.ui-button.color-primary.variant-ghost:active {
+   background-color: var(--primary-main);
    color: var(--primary-contrast);
+}
+
+/* Secondary */
+
+.ui-button.color-secondary {
+   box-shadow: 0 0 0 0 var(--secondary-light);
+}
+
+/* filled */
+.ui-button.color-secondary.variant-filled {
+   background-color: var(--secondary-main);
+   border-color: var(--secondary-main);
+   color: var(--secondary-contrast);
+}
+
+/* filled:hover */
+.ui-button.color-secondary.variant-filled:hover {
+   background-color: var(--secondary-dark);
+   border-color: var(--secondary-dark);
+}
+
+/* outlined */
+.ui-button.color-secondary.variant-outlined {
+   background-color: var(--secondary-contrast);
+   border-color: var(--secondary-main);
+   color: var(--secondary-main);
+}
+
+/* outlined:over */
+.ui-button.color-secondary.variant-outlined:hover {
+   border-color: var(--secondary-dark);
+   color: var(--secondary-dark);
+}
+
+/* ghost */
+.ui-button.color-secondary.variant-ghost {
+   background-color: transparent;
+   border-color: transparent;
+   color: var(--secondary-main);
+}
+
+/* ghost:hover */
+.ui-button.color-secondary.variant-ghost:hover {
+   background-color: var(--secondary-light);
+   color: var(--secondary-contrast);
+}
+
+/* ghost:active */
+.ui-button.color-secondary.variant-ghost:active {
+   background-color: var(--secondary-main);
+   color: var(--secondary-contrast);
+}
+
+/* Sizes */
+
+/* large */
+
+.ui-button.size-lg {
+   gap: 0.6rem;
+   border-radius: 0.7rem;
+   padding: 0.6rem 1.1rem;
+   font-size: 1.1rem;
+}
+
+.ui-button.size-lg svg{
+   width: 1.2rem;
+}
+
+.ui-button.size-lg svg:only-child{
+   width: 1.3rem;
+}
+
+/* medium */
+
+.ui-button.size-md {
+   gap: 0.5rem;
+   border-radius: 0.6rem;
+   padding: 0.5rem 1rem;
+   font-size: 1rem;
+}
+
+.ui-button.size-md svg{
+   width: 1rem;
+}
+
+.ui-button.size-md svg:only-child{
+   width: 1.1rem;
+}
+
+/* small */
+
+.ui-button.size-sm {
+   gap: 0.4rem;
+   border-radius: 0.5rem;
+   padding: 0.4rem 0.9rem;
+   font-size: 0.9rem;
+}
+
+.ui-button.size-sm svg{
+   width: 0.8rem;
+}
+
+.ui-button.size-sm svg:only-child{
+   width: 0.9rem;
+}
+
+.ui-button.size-lg.wave {
+   animation: wave-lg 0.3s ease-in-out;
+}
+
+.ui-button.size-md.wave {
+   animation: wave-md 0.3s ease-in-out;
+}
+
+.size-sm.wave {
+   animation: wave-sm 0.3s ease-in-out;
+}
+
+@keyframes wave-lg {
+   100% {
+      box-shadow: 0 0 0 0.5rem transparent;
+   }
+}
+
+@keyframes wave-md {
+   100% {
+      box-shadow: 0 0 0 0.4rem transparent;
+   }
+}
+
+@keyframes wave-sm {
+   100% {
+      box-shadow: 0 0 0 0.3rem transparent;
+   }
 }

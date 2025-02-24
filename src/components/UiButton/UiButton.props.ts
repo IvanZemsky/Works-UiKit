@@ -1,4 +1,11 @@
 export type UiButtonProps = {
+   /**
+    * Tag of button
+    * @default 'button'
+    * @type 'button' | 'a' | 'router-link'
+    */
+   as?: "button" | "a" | "router-link"
+
    /** Vaiant of button
     * @default 'filled'
     * @type 'filled' | 'outlined' | "ghost"
