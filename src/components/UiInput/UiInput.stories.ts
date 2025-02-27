@@ -31,8 +31,8 @@ export const Color: Story = {
       },
       template: `
          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem">
-            <ui-input color="secondary" placeholder="Small"/>
-            <ui-input color="secondary" placeholder="Medium"/>
+            <ui-input color="primary" placeholder="Primary"/>
+            <ui-input color="secondary" placeholder="Secondary"/>
          </div>
       `,
    }),

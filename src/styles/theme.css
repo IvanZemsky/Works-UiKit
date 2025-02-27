@@ -9,6 +9,8 @@
    --secondary-light: #585858;
    --secondary-dark: #151515;
 
+   --neutral: #dcdcdc;
+   --neutral-light: #e3e3e3;
    --inactive: #c1c1c1;
    --base-input-text: #000000;
 }

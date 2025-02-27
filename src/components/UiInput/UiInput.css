@@ -16,6 +16,14 @@
    box-shadow: none;
 }
 
+.ui-input input::placeholder{
+   color: var(--inactive);
+}
+
+.ui-input:hover input{
+   color: var(--base-input-text);
+}
+
 .ui-input input:focus {
    outline: none;
 }
@@ -62,7 +70,7 @@
 /* outlined */
 .ui-input.color-secondary.variant-outlined {
    background-color: var(--secondary-contrast);
-   border-color: var(--secondary-main);
+   border-color: var(--inactive);
    color: var(--secondary-main);
 }
 

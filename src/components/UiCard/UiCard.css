@@ -1,0 +1,32 @@
+.ui-card{
+   width: fit-content;
+   border: 1px solid var(--neutral);
+}
+
+.ui-card.hoverable{
+   cursor: pointer;
+   transition: box-shadow 0.15s linear;
+}
+
+.ui-card.hoverable:hover{
+   box-shadow: 0 0.2rem 1rem 0.2rem var(--neutral-light);
+}
+
+/* sizes */
+
+.ui-card.size-lg{
+   border-radius: 1.7rem;
+   padding: 1.5rem;
+}
+
+
+.ui-card.size-md{
+   border-radius: 1.3rem;
+   padding: 1.2rem;
+}
+
+
+.ui-card.size-sm{
+   border-radius: 1rem;
+   padding: 0.7rem;
+}

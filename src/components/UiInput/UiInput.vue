@@ -4,13 +4,16 @@ import "./UiInput.css"
 import type { UiInputProps } from "./UiInput.props"
 import { useAttrs } from "vue"
 
-const props = withDefaults(defineProps<UiInputProps>(), {
+defineOptions({
+  inheritAttrs: false
+})
+
+withDefaults(defineProps<UiInputProps>(), {
    variant: "outlined",
    size: "md",
    color: "primary",
 })
 
-const { variant, size, color } = props
 const { class: className, style, ...inputAttrs } = useAttrs()
 </script>
 
