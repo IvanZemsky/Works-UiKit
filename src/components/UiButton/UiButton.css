@@ -10,7 +10,7 @@
    z-index: inherit;
 }
 
-.ui-button svg{
+.ui-button svg {
    flex-shrink: 0;
 }
 
@@ -30,9 +30,18 @@
 }
 
 /* filled:hover */
-.ui-button.color-primary.variant-filled:hover {
-   background-color: var(--primary-dark);
-   border-color: var(--primary-dark);
+@media screen and (hover: hover) {
+   .ui-button.color-primary.variant-filled:hover {
+      background-color: var(--primary-dark);
+      border-color: var(--primary-dark);
+   }
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-primary.variant-filled:active {
+      background-color: var(--primary-dark);
+      border-color: var(--primary-dark);
+   }
 }
 
 /* outlined */
@@ -42,10 +51,19 @@
    color: var(--primary-main);
 }
 
-/* outlined:over */
-.ui-button.color-primary.variant-outlined:hover {
-   border-color: var(--primary-dark);
-   color: var(--primary-dark);
+/* outlined:hover */
+@media screen and (hover: hover) {
+   .ui-button.color-primary.variant-outlined:hover {
+      border-color: var(--primary-dark);
+      color: var(--primary-dark);
+   }
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-primary.variant-outlined:active {
+      border-color: var(--primary-dark);
+      color: var(--primary-dark);
+   }
 }
 
 /* ghost */
@@ -56,15 +74,24 @@
 }
 
 /* ghost:hover */
-.ui-button.color-primary.variant-ghost:hover {
-   background-color: var(--primary-light);
-   color: var(--primary-contrast);
+@media screen and (hover: hover) {
+   .ui-button.color-primary.variant-ghost:hover {
+      background-color: var(--primary-light);
+      color: var(--primary-contrast);
+   }
 }
 
 /* ghost:active */
 .ui-button.color-primary.variant-ghost:active {
    background-color: var(--primary-main);
    color: var(--primary-contrast);
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-primary.variant-ghost:active {
+      background-color: var(--primary-light);
+      color: var(--primary-contrast);
+   }
 }
 
 /* Secondary */
@@ -81,9 +108,18 @@
 }
 
 /* filled:hover */
-.ui-button.color-secondary.variant-filled:hover {
-   background-color: var(--secondary-dark);
-   border-color: var(--secondary-dark);
+@media screen and (hover: hover) {
+   .ui-button.color-secondary.variant-filled:hover {
+      background-color: var(--secondary-dark);
+      border-color: var(--secondary-dark);
+   }
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-secondary.variant-filled:active {
+      background-color: var(--secondary-dark);
+      border-color: var(--secondary-dark);
+   }
 }
 
 /* outlined */
@@ -93,10 +129,19 @@
    color: var(--secondary-main);
 }
 
-/* outlined:over */
-.ui-button.color-secondary.variant-outlined:hover {
-   border-color: var(--secondary-dark);
-   color: var(--secondary-dark);
+/* outlined:hover */
+@media screen and (hover: hover) {
+   .ui-button.color-secondary.variant-outlined:hover {
+      border-color: var(--secondary-dark);
+      color: var(--secondary-dark);
+   }
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-secondary.variant-outlined:active {
+      border-color: var(--secondary-dark);
+      color: var(--secondary-dark);
+   }
 }
 
 /* ghost */
@@ -107,15 +152,24 @@
 }
 
 /* ghost:hover */
-.ui-button.color-secondary.variant-ghost:hover {
-   background-color: var(--secondary-light);
-   color: var(--secondary-contrast);
+@media screen and (hover: hover) {
+   .ui-button.color-secondary.variant-ghost:hover {
+      background-color: var(--secondary-light);
+      color: var(--secondary-contrast);
+   }
 }
 
 /* ghost:active */
 .ui-button.color-secondary.variant-ghost:active {
    background-color: var(--secondary-main);
    color: var(--secondary-contrast);
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-secondary.variant-ghost:active {
+      background-color: var(--secondary-light);
+      color: var(--secondary-contrast);
+   }
 }
 
 /* Sizes */
@@ -129,11 +183,11 @@
    font-size: 1.1rem;
 }
 
-.ui-button.size-lg svg{
+.ui-button.size-lg svg {
    width: 1.2rem;
 }
 
-.ui-button.size-lg svg:only-child{
+.ui-button.size-lg svg:only-child {
    width: 1.3rem;
 }
 
@@ -146,11 +200,11 @@
    font-size: 1rem;
 }
 
-.ui-button.size-md svg{
+.ui-button.size-md svg {
    width: 1rem;
 }
 
-.ui-button.size-md svg:only-child{
+.ui-button.size-md svg:only-child {
    width: 1.1rem;
 }
 
@@ -163,11 +217,11 @@
    font-size: 0.9rem;
 }
 
-.ui-button.size-sm svg{
+.ui-button.size-sm svg {
    width: 0.8rem;
 }
 
-.ui-button.size-sm svg:only-child{
+.ui-button.size-sm svg:only-child {
    width: 0.9rem;
 }
 

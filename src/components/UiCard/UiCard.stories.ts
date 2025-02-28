@@ -54,7 +54,7 @@ export const Hoverable: Story = {
       template: `
          <ui-card hoverable>
             <ui-spacing vertical>
-               <p><b>Small card</b></p>
+               <p><b>Hoverable card</b></p>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                <ui-button>Button</ui-button>
             </ui-spacing>

@@ -2,27 +2,45 @@
 import "./styles/theme.css"
 import "./styles/reset.css"
 import { ref } from "vue"
-import UiButton from "./components/UiButton/UiButton.vue"
-import { SearchOutlined } from "@vicons/antd"
-import UiInput from "./components/UiInput/UiInput.vue"
+import UiRadioGroup from "./components/UiRadioGroup/UiRadioGroup.vue"
+import UiSpacing from "./components/UiSpacing/UiSpacing.vue"
+import UiRadioGroupItem from "./components/UiRadioGroup/UiRadioGroupItem.vue"
 
-const count = ref(0)
-const text = ref("")
+const value = ref()
 </script>
 
 <template>
    <div class="wrap">
-      {{ count }}
-      text: {{ text }}
-      <ui-button @click="count++">Increment</ui-button>
-      <ui-input placeholder="Outlined" v-model="text">
-         <template #icon><SearchOutlined /></template>
-      </ui-input>
+      {{ value }}
+      <ui-spacing align="center">
+         <ui-radio-group
+            title="Radio group"
+            name="example-radio-group-sizes"
+            size="lg"
+            v-model="value"
+         >
+            <ui-radio-group-item
+               id="example-radio-group-sizes-sm"
+               value="radio1"
+               label="Radio 1"
+            />
+            <ui-radio-group-item
+               id="example-radio-group-sizes-md"
+               value="radio2"
+               label="Radio 2"
+            />
+            <ui-radio-group-item
+               id="example-radio-group-sizes-lg"
+               value="radio3"
+               label="Radio 3"
+            />
+         </ui-radio-group>
+      </ui-spacing>
    </div>
 </template>
 
 <style scoped>
-.wrap{
-  padding: 15px;
+.wrap {
+   padding: 15px;
 }
 </style>

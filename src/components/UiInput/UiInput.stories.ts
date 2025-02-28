@@ -49,7 +49,7 @@ export const Icon: Story = {
             <ui-input placeholder="Outlined">
                <template #icon><SearchOutlined /></template>
             </ui-input>
-            <ui-input placeholder="Ghost">
+            <ui-input variant="ghost" placeholder="Ghost">
                <template #icon><SearchOutlined /></template>
             </ui-input>
          </div>

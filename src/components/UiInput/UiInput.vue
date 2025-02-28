@@ -36,7 +36,6 @@ const { class: className, style, ...inputAttrs } = useAttrs()
       <input
          v-bind="inputAttrs"
          type="text"
-         :value="modelValue"
          @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       />
    </div>
