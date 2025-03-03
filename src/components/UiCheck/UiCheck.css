@@ -1,41 +1,56 @@
-.ui-radio {
+.ui-check {
    display: flex;
    align-items: center;
 }
 
-.ui-radio input {
+.ui-check input{
+   position: relative;
    appearance: none;
    flex-shrink: 0;
    aspect-ratio: 1 / 1;
-   border: 1px solid var(--neutral);
-   border-radius: 50%;
-   cursor: pointer;
    padding: 0;
+   border: 1px solid var(--neutral);
+   cursor: pointer;
    transition: all 0.15s linear;
    outline: none;
 }
 
-.ui-radio:hover input {
+.ui-check:hover input {
+   border-color: var(--primary-dark);
+}
+
+.ui-check input:checked::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url("/src/assets/icons/check.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.ui-check:has(input:checked) input{
+   background-color: var(--primary-main);
    border-color: var(--primary-main);
 }
 
-.ui-radio input:checked {
-   border: solid var(--primary-main);
-}
-
 @media screen and (hover: hover) {
-   .ui-radio:has(input:checked):hover input {
+   .ui-check:has(input:checked):hover input{
+      background-color: var(--primary-dark);
       border-color: var(--primary-dark);
    }
 }
 
 @media screen and (hover: none) {
-   .ui-radio:has(input:checked):active input {
+   .ui-check:has(input:checked):active input{
+      background-color: var(--primary-dark);
       border-color: var(--primary-dark);
    }
 }
 
-.ui-radio label {
+.ui-check label{
    cursor: pointer;
 }
 
@@ -43,90 +58,82 @@
 
 /* large */
 
-.ui-radio.size-lg {
+.ui-check.size-lg{
    gap: 0.9rem;
 }
 
-.ui-radio.size-lg input {
+.ui-check.size-lg input{
    width: 1.6rem;
+   border-radius: 0.4rem;
 }
 
-.ui-radio.size-lg label {
+.ui-check.size-lg label{
    font-size: 1.1rem;
 }
 
-.ui-radio.size-lg input:checked {
-   border-width: 0.45rem;
-}
-
 @media screen and (hover: hover) {
-   .ui-radio.size-lg input:focus {
+   .ui-check.size-lg input:focus{
       box-shadow: 0 0 0 0.15rem var(--primary-light);
    }
 }
 
 @media screen and (hover: none) {
-   .ui-radio.size-lg input:active {
+   .ui-check.size-lg input:active{
       box-shadow: 0 0 0 0.15rem var(--primary-light);
    }
 }
 
 /* medium */
 
-.ui-radio.size-md {
+.ui-check.size-md{
    gap: 0.7rem;
 }
 
-.ui-radio.size-md input {
+.ui-check.size-md input{
    width: 1.3rem;
+   border-radius: 0.3rem;
 }
 
-.ui-radio.size-md label {
+.ui-check.size-md label{
    font-size: 1rem;
 }
 
-.ui-radio.size-md input:checked {
-   border-width: 0.4rem;
-}
-
 @media screen and (hover: hover) {
-   .ui-radio.size-md input:focus {
+   .ui-check.size-md input:focus{
       box-shadow: 0 0 0 0.125rem var(--primary-light);
    }
 }
 
 @media screen and (hover: none) {
-   .ui-radio.size-md input:active {
+   .ui-check.size-md input:active{
       box-shadow: 0 0 0 0.125rem var(--primary-light);
    }
 }
 
 /* small */
 
-.ui-radio.size-sm {
+.ui-check.size-sm{
    gap: 0.5rem;
 }
 
-.ui-radio.size-sm input {
+.ui-check.size-sm input{
    width: 1rem;
+   border-radius: 0.2rem;
 }
 
-.ui-radio.size-sm label {
+.ui-check.size-sm label{
    font-size: 0.9rem;
 }
 
-.ui-radio.size-sm input:checked {
-   border-width: 0.35rem;
-}
-
 @media screen and (hover: hover) {
-   .ui-radio.size-sm input:focus {
+   .ui-check.size-sm input:focus{
       box-shadow: 0 0 0 0.1rem var(--primary-light);
    }
 }
 
 @media screen and (hover: none) {
-   .ui-radio.size-sm input:active {
+   .ui-check.size-sm input:active{
       box-shadow: 0 0 0 0.1rem var(--primary-light);
    }
 }
+

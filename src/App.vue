@@ -2,39 +2,37 @@
 import "./styles/theme.css"
 import "./styles/reset.css"
 import { ref } from "vue"
-import UiRadioGroup from "./components/UiRadioGroup/UiRadioGroup.vue"
 import UiSpacing from "./components/UiSpacing/UiSpacing.vue"
-import UiRadioGroupItem from "./components/UiRadioGroup/UiRadioGroupItem.vue"
+import UiCheckGroup from "./components/UiCheckGroup/UiCheckGroup.vue"
+import UiCheckGroupItem from "./components/UiCheckGroup/UiCheckGroupItem.vue"
 
-const value = ref()
+const value = ref<string[]>([])
 </script>
 
 <template>
    <div class="wrap">
-      {{ value }}
+      {{ JSON.stringify(value) }}
       <ui-spacing align="center">
-         <ui-radio-group
-            title="Radio group"
-            name="example-radio-group-sizes"
-            size="lg"
-            v-model="value"
-         >
-            <ui-radio-group-item
-               id="example-radio-group-sizes-sm"
-               value="radio1"
-               label="Radio 1"
+         <ui-check-group title="Check group" size="lg" v-model="value">
+            <ui-check-group-item
+               id="example-check-group-sizes-sm"
+               name="example-check-group-sizes-sm"
+               value="check1"
+               label="Check 1"
             />
-            <ui-radio-group-item
-               id="example-radio-group-sizes-md"
-               value="radio2"
-               label="Radio 2"
+            <ui-check-group-item
+               id="example-check-group-sizes-md"
+               name="example-check-group-sizes-md"
+               value="check2"
+               label="Check 2"
             />
-            <ui-radio-group-item
-               id="example-radio-group-sizes-lg"
-               value="radio3"
-               label="Radio 3"
+            <ui-check-group-item
+               id="example-check-group-sizes-lg"
+               name="example-check-group-sizes-lg"
+               value="check3"
+               label="Check 3"
             />
-         </ui-radio-group>
+         </ui-check-group>
       </ui-spacing>
    </div>
 </template>

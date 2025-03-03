@@ -1,14 +1,14 @@
-export type UiRadioGroupProps = {
-   /** Size of radio group
+export type UiCheckProps = {
+   /** Size of input
     * @default 'md'
     * @type 'sm' | 'md' | 'lg'
     */
    size?: "sm" | "md" | "lg"
 
    /**
-    * Title for radio group
+    * Label for input
     */
-   title?: string
+   label?: string
 
    modelValue?: string
 }

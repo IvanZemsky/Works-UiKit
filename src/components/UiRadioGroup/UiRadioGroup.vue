@@ -2,9 +2,8 @@
 import "./UiRadioGroup.css"
 import clsx from "clsx"
 import UiSpacing from "../UiSpacing/UiSpacing.vue"
-import type { UiRadioGroupProps } from "./UiRadioGroup.props"
 import { computed, provide, useAttrs } from "vue"
-import type { UiRadioGroupProvide } from "./types"
+import type { UiRadioGroupProvide, UiRadioGroupProps } from "./types"
 
 const props = withDefaults(defineProps<UiRadioGroupProps>(), {
    size: "md",

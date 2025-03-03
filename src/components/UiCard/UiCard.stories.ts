@@ -18,7 +18,7 @@ export const Sizes: Story = {
          return { args }
       },
       template: `
-      <ui-spacing wrap>
+      <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
          <ui-card size="sm">
             <ui-spacing vertical>
                <p><b>Small card</b></p>
@@ -40,7 +40,7 @@ export const Sizes: Story = {
                <ui-button>Button</ui-button>
             </ui-spacing>
          </ui-card>
-      </ui-spacing>
+      </div>
       `,
    }),
 }

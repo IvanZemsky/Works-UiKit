@@ -4,7 +4,8 @@ import type { Meta, StoryObj } from "@storybook/vue3"
 
 const meta: Meta = {
    component: UiButton,
-   title: "Button",
+
+   title: "Inputs/Button",
    tags: ["autodocs"],
 }
 
@@ -32,7 +33,7 @@ export const Sizes: Story = {
          return { args }
       },
       template: `
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-button size="sm">Button</ui-button>
             <ui-button size="md">Button</ui-button>
             <ui-button size="lg">Button</ui-button>
@@ -89,12 +90,12 @@ export const Colors: Story = {
          return { args }
       },
       template: `
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
             <ui-button>Button</ui-button>
             <ui-button variant="outlined">Button</ui-button>
             <ui-button variant="ghost">Button</ui-button>
          </div>
-          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
+          <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
             <ui-button color="secondary">Button</ui-button>
             <ui-button color="secondary" variant="outlined">Button</ui-button>
             <ui-button color="secondary" variant="ghost">Button</ui-button>

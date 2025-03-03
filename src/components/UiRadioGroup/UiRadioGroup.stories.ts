@@ -1,11 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/vue3"
 import UiRadioGroup from "./UiRadioGroup.vue"
-import UiRadio from "../UiRadio/UiRadio.vue"
-import UiSpacing from "../UiSpacing/UiSpacing.vue"
 import UiRadioGroupItem from "./UiRadioGroupItem.vue"
 
 const meta: Meta = {
-   title: "Radio Group",
+   title: "Inputs/Radio Group",
    component: UiRadioGroup,
    tags: ["autodocs"],
 }
@@ -14,7 +12,7 @@ type Story = StoryObj<typeof UiRadioGroup>
 
 export const Default: Story = {
    render: (args) => ({
-      components: { UiRadioGroup, UiRadio },
+      components: { UiRadioGroup, UiRadioGroupItem },
       setup() {
          return { args }
       },
@@ -42,12 +40,12 @@ export const Default: Story = {
 
 export const Sizes: Story = {
    render: (args) => ({
-      components: { UiRadioGroup, UiRadioGroupItem, UiSpacing },
+      components: { UiRadioGroup, UiRadioGroupItem },
       setup() {
          return { args }
       },
       template: `
-         <ui-spacing align="center" gap="lg">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 2rem">
             <ui-radio-group title="Radio group" size="sm">
                <ui-radio-group-item
                   id="example-radio-group-sizes-sm-1"
@@ -99,7 +97,7 @@ export const Sizes: Story = {
                   label="Radio 3"
                />
             </ui-radio-group>
-         </ui-spacing>
+         </div>
       `,
    }),
 }

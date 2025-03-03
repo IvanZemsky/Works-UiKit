@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/vue3"
 import { SearchOutlined } from "@vicons/antd"
 
 const meta: Meta = {
-   title: "Text Input",
+   title: "Inputs/Text Input",
    component: UiInput,
    tags: ["autodocs"],
 }
@@ -30,7 +30,7 @@ export const Color: Story = {
          return { args }
       },
       template: `
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-input color="primary" placeholder="Primary"/>
             <ui-input color="secondary" placeholder="Secondary"/>
          </div>
@@ -45,7 +45,7 @@ export const Icon: Story = {
          return { args }
       },
       template: `
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-input placeholder="Outlined">
                <template #icon><SearchOutlined /></template>
             </ui-input>
@@ -64,7 +64,7 @@ export const Size: Story = {
          return { args }
       },
       template: `
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-input size="sm" placeholder="Small"/>
             <ui-input size="md" placeholder="Medium"/>
             <ui-input size="lg" placeholder="Large"/>
