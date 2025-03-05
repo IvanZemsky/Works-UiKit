@@ -1,4 +1,4 @@
-import{d as U,u as t,q as y,x as v,s as G,k as S,j as s,o as g,v as I,c as h,g as k,f as q,t as N,p as C,l as D}from"./vue.esm-bundler-CviTMTQO.js";import{c as $}from"./clsx-B-dksMZM.js";import{_ as V}from"./UiSpacing-D-WYPKfY.js";import{_ as w}from"./UiRadio-BmGhXXRj.js";const B={key:0,class:"ui-radio-group__title"},d=U({__name:"UiRadioGroup",props:{size:{default:"md"},title:{default:""},modelValue:{default:""}},emits:["update:modelValue"],setup(a,{emit:p}){const i=a,n=p,u=t(),l=y({get:()=>i.modelValue,set:e=>{n("update:modelValue",e)}});v("ui-radio-group",{size:i.size,name:u.name||"",modelValue:l});const{className:m}=t();return(e,j)=>(g(),G(V,{class:S(s($)("ui-radio-group",`size-${e.size}`,{className:s(m)})),gap:e.size,vertical:""},{default:I(()=>[e.title?(g(),h("p",B,N(e.title),1)):k("",!0),q(e.$slots,"default")]),_:3},8,["class","gap"]))}});d.__docgenInfo={exportName:"default",displayName:"UiRadioGroup",description:"",tags:{},props:[{name:"size",description:"Size of radio group",tags:{default:[{description:"'md'",title:"default"}],type:[{title:"type",description:"'sm' | 'md' | 'lg'"}]},required:!1,type:{name:"union",elements:[{name:'"sm"'},{name:'"md"'},{name:'"lg"'}]},defaultValue:{func:!1,value:'"md"'}},{name:"title",description:"Title for radio group",required:!1,type:{name:"string"},defaultValue:{func:!1,value:'""'}},{name:"modelValue",required:!1,type:{name:"string"},defaultValue:{func:!1,value:'""'}}],events:[{name:"update:modelValue"}],slots:[{name:"default"}],sourceFiles:["D:/Programming/Vue/p-work-ui/src/components/UiRadioGroup/UiRadioGroup.vue"]};const c=U({__name:"UiRadioGroupItem",props:{size:{},label:{},modelValue:{}},setup(a){const{size:p,name:i,modelValue:n}=C("ui-radio-group",{size:"md",name:"",modelValue:D("")}),{value:u}=t(),l=()=>{n.value=u};return(m,e)=>(g(),G(w,{size:s(p),name:s(i),label:m.label,onChange:l},null,8,["size","name","label"]))}});c.__docgenInfo={exportName:"default",displayName:"UiRadioGroupItem",description:"",tags:{},props:[{name:"size",description:"Size of input",tags:{default:[{description:"'md'",title:"default"}],type:[{title:"type",description:"'sm' | 'md' | 'lg'"}]},required:!1,type:{name:"union",elements:[{name:'"sm"'},{name:'"md"'},{name:'"lg"'}]}},{name:"label",description:"Label for input",required:!1,type:{name:"string"}},{name:"modelValue",required:!1,type:{name:"string"}}],sourceFiles:["D:/Programming/Vue/p-work-ui/src/components/UiRadioGroup/UiRadioGroupItem.vue"]};const L={title:"Radio Group",component:d,tags:["autodocs"]},o={render:a=>({components:{UiRadioGroup:d,UiRadioGroupItem:c},setup(){return{args:a}},template:`
+import{d as b,u as _,y as V,s as y,v as U,l as v,k as n,o as l,c as I,j as S,g as h,t as k,z as w,p as q}from"./vue.esm-bundler-DxjQ3HK0.js";import{c as C}from"./clsx-B-dksMZM.js";import{_ as D}from"./UiSpacing-CGHnKaTZ.js";import{u as N}from"./useModelValue-hrB-ORaP.js";import{_ as $}from"./UiRadio-CGZdO2xY.js";const B={key:0,class:"ui-radio-group__title"},s=b({__name:"UiRadioGroup",props:{size:{default:"md"},title:{default:""},modelValue:{default:""}},emits:["update:modelValue"],setup(a,{emit:d}){const i=a,p=_(),u=N(d,i.modelValue);return V("ui-radio-group",{size:i.size,name:p.name||"",modelValue:u}),(e,G)=>(l(),y(D,{class:v(n(C)("ui-radio-group",`size-${e.size}`)),gap:e.size,vertical:""},{default:U(()=>[e.title?(l(),I("p",B,k(e.title),1)):S("",!0),h(e.$slots,"default")]),_:3},8,["class","gap"]))}});s.__docgenInfo={exportName:"default",displayName:"UiRadioGroup",description:"",tags:{},props:[{name:"size",required:!0,type:{name:"TSIndexedAccessType"},defaultValue:{func:!1,value:'"md"'}},{name:"title",required:!1,type:{name:"string"},defaultValue:{func:!1,value:'""'}},{name:"modelValue",required:!1,type:{name:"string"},defaultValue:{func:!1,value:'""'}}],events:[{name:"update:modelValue"}],slots:[{name:"default"}],sourceFiles:["D:/Programming/Vue/p-work-ui/src/components/UiRadioGroup/UiRadioGroup.vue"]};const m=b({__name:"UiRadioGroupItem",props:{size:{},label:{},modelValue:{}},setup(a){const{size:d,name:i,modelValue:p}=w("ui-radio-group",{size:"md",name:"",modelValue:q("")}),{value:t}=_(),u=()=>{p.value=t};return(e,G)=>(l(),y($,{size:n(d),name:n(i),label:e.label,onChange:u},null,8,["size","name","label"]))}});m.__docgenInfo={exportName:"default",displayName:"UiRadioGroupItem",description:"",tags:{},props:[{name:"size",description:"Size of input",tags:{default:[{description:"'md'",title:"default"}],type:[{title:"type",description:"'sm' | 'md' | 'lg'"}]},required:!1,type:{name:"union",elements:[{name:'"sm"'},{name:'"md"'},{name:'"lg"'}]}},{name:"label",description:"Label for input",required:!1,type:{name:"string"}},{name:"modelValue",required:!1,type:{name:"string"}}],sourceFiles:["D:/Programming/Vue/p-work-ui/src/components/UiRadioGroup/UiRadioGroupItem.vue"]};const T={title:"Inputs/Radio Group",component:s,tags:["autodocs"]},o={render:a=>({components:{UiRadioGroup:s,UiRadioGroupItem:m},setup(){return{args:a}},template:`
          <ui-radio-group title="Radio group">
              <ui-radio-group-item
                id="example-radio-group-sizes-sm"
@@ -16,8 +16,8 @@ import{d as U,u as t,q as y,x as v,s as G,k as S,j as s,o as g,v as I,c as h,g a
                label="Radio 3"
             />
          </ui-radio-group>
-      `})},r={render:a=>({components:{UiRadioGroup:d,UiRadioGroupItem:c,UiSpacing:V},setup(){return{args:a}},template:`
-         <ui-spacing align="center" gap="lg">
+      `})},r={render:a=>({components:{UiRadioGroup:s,UiRadioGroupItem:m},setup(){return{args:a}},template:`
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 2rem">
             <ui-radio-group title="Radio group" size="sm">
                <ui-radio-group-item
                   id="example-radio-group-sizes-sm-1"
@@ -69,8 +69,8 @@ import{d as U,u as t,q as y,x as v,s as G,k as S,j as s,o as g,v as I,c as h,g a
                   label="Radio 3"
                />
             </ui-radio-group>
-         </ui-spacing>
-      `})};var z,x,R;o.parameters={...o.parameters,docs:{...(z=o.parameters)==null?void 0:z.docs,source:{originalSource:`{
+         </div>
+      `})};var g,z,c;o.parameters={...o.parameters,docs:{...(g=o.parameters)==null?void 0:g.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiRadioGroup,
@@ -101,12 +101,11 @@ import{d as U,u as t,q as y,x as v,s as G,k as S,j as s,o as g,v as I,c as h,g a
          </ui-radio-group>
       \`
   })
-}`,...(R=(x=o.parameters)==null?void 0:x.docs)==null?void 0:R.source}}};var f,b,_;r.parameters={...r.parameters,docs:{...(f=r.parameters)==null?void 0:f.docs,source:{originalSource:`{
+}`,...(c=(z=o.parameters)==null?void 0:z.docs)==null?void 0:c.source}}};var x,f,R;r.parameters={...r.parameters,docs:{...(x=r.parameters)==null?void 0:x.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiRadioGroup,
-      UiRadioGroupItem,
-      UiSpacing
+      UiRadioGroupItem
     },
     setup() {
       return {
@@ -114,7 +113,7 @@ import{d as U,u as t,q as y,x as v,s as G,k as S,j as s,o as g,v as I,c as h,g a
       };
     },
     template: \`
-         <ui-spacing align="center" gap="lg">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 2rem">
             <ui-radio-group title="Radio group" size="sm">
                <ui-radio-group-item
                   id="example-radio-group-sizes-sm-1"
@@ -166,7 +165,7 @@ import{d as U,u as t,q as y,x as v,s as G,k as S,j as s,o as g,v as I,c as h,g a
                   label="Radio 3"
                />
             </ui-radio-group>
-         </ui-spacing>
+         </div>
       \`
   })
-}`,...(_=(b=r.parameters)==null?void 0:b.docs)==null?void 0:_.source}}};const O=["Default","Sizes"];export{o as Default,r as Sizes,O as __namedExportsOrder,L as default};
+}`,...(R=(f=r.parameters)==null?void 0:f.docs)==null?void 0:R.source}}};const L=["Default","Sizes"];export{o as Default,r as Sizes,L as __namedExportsOrder,T as default};

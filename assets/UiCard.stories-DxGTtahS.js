@@ -1,5 +1,5 @@
-import{d as l,c as g,f as b,k as f,j as v,o as U}from"./vue.esm-bundler-CviTMTQO.js";import{c as B}from"./clsx-B-dksMZM.js";import{_ as d}from"./UiSpacing-D-WYPKfY.js";import{_ as m}from"./UiButton-DRWQtEiW.js";const t=l({__name:"UiCard",props:{hoverable:{type:Boolean,default:!1},size:{default:"md"}},setup(e){return(a,_)=>(U(),g("div",{class:f(v(B)("ui-card",`size-${a.size}`,{hoverable:a.hoverable}))},[b(a.$slots,"default")],2))}});t.__docgenInfo={exportName:"default",displayName:"UiCard",description:"",tags:{},props:[{name:"hoverable",required:!1,type:{name:"boolean"},defaultValue:{func:!1,value:"false"}},{name:"size",description:"Size of the card",tags:{default:[{description:'"md"',title:"default"}],type:[{title:"type",description:'"sm" | "md" | "lg"'}]},required:!1,type:{name:"union",elements:[{name:'"sm"'},{name:'"md"'},{name:'"lg"'}]},defaultValue:{func:!1,value:'"md"'}}],slots:[{name:"default"}],sourceFiles:["D:/Programming/Vue/p-work-ui/src/components/UiCard/UiCard.vue"]};const h={component:t,title:"Card",tags:["autodocs"]},i={render:e=>({components:{UiCard:t,UiSpacing:d,UiButton:m},setup(){return{args:e}},template:`
-      <ui-spacing wrap>
+import{d as m,c as g,g as b,l as f,k as v,o as U}from"./vue.esm-bundler-DxjQ3HK0.js";import{c as B}from"./clsx-B-dksMZM.js";import{_ as d}from"./UiSpacing-CGHnKaTZ.js";import{_ as l}from"./UiButton-BRic7zc7.js";const a=m({__name:"UiCard",props:{hoverable:{type:Boolean,default:!1},size:{default:"md"}},setup(e){return(n,_)=>(U(),g("div",{class:f(v(B)("ui-card",`size-${n.size}`,{hoverable:n.hoverable}))},[b(n.$slots,"default")],2))}});a.__docgenInfo={exportName:"default",displayName:"UiCard",description:"",tags:{},props:[{name:"hoverable",required:!1,type:{name:"boolean"},defaultValue:{func:!1,value:"false"}},{name:"size",description:"Size of the card",tags:{default:[{description:'"md"',title:"default"}],type:[{title:"type",description:'"sm" | "md" | "lg"'}]},required:!1,type:{name:"union",elements:[{name:'"sm"'},{name:'"md"'},{name:'"lg"'}]},defaultValue:{func:!1,value:'"md"'}}],slots:[{name:"default"}],sourceFiles:["D:/Programming/Vue/p-work-ui/src/components/UiCard/UiCard.vue"]};const L={component:a,title:"Card",tags:["autodocs"]},i={render:e=>({components:{UiCard:a,UiSpacing:d,UiButton:l},setup(){return{args:e}},template:`
+      <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
          <ui-card size="sm">
             <ui-spacing vertical>
                <p><b>Small card</b></p>
@@ -21,8 +21,8 @@ import{d as l,c as g,f as b,k as f,j as v,o as U}from"./vue.esm-bundler-CviTMTQO
                <ui-button>Button</ui-button>
             </ui-spacing>
          </ui-card>
-      </ui-spacing>
-      `})},n={render:e=>({components:{UiCard:t,UiSpacing:d,UiButton:m},setup(){return{args:e}},template:`
+      </div>
+      `})},t={render:e=>({components:{UiCard:a,UiSpacing:d,UiButton:l},setup(){return{args:e}},template:`
          <ui-card hoverable>
             <ui-spacing vertical>
                <p><b>Hoverable card</b></p>
@@ -43,7 +43,7 @@ import{d as l,c as g,f as b,k as f,j as v,o as U}from"./vue.esm-bundler-CviTMTQO
       };
     },
     template: \`
-      <ui-spacing wrap>
+      <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
          <ui-card size="sm">
             <ui-spacing vertical>
                <p><b>Small card</b></p>
@@ -65,10 +65,10 @@ import{d as l,c as g,f as b,k as f,j as v,o as U}from"./vue.esm-bundler-CviTMTQO
                <ui-button>Button</ui-button>
             </ui-spacing>
          </ui-card>
-      </ui-spacing>
+      </div>
       \`
   })
-}`,...(o=(s=i.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};var u,c,p;n.parameters={...n.parameters,docs:{...(u=n.parameters)==null?void 0:u.docs,source:{originalSource:`{
+}`,...(o=(s=i.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};var u,p,c;t.parameters={...t.parameters,docs:{...(u=t.parameters)==null?void 0:u.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiCard,
@@ -90,4 +90,4 @@ import{d as l,c as g,f as b,k as f,j as v,o as U}from"./vue.esm-bundler-CviTMTQO
          </ui-card>
       \`
   })
-}`,...(p=(c=n.parameters)==null?void 0:c.docs)==null?void 0:p.source}}};const y=["Sizes","Hoverable"];export{n as Hoverable,i as Sizes,y as __namedExportsOrder,h as default};
+}`,...(c=(p=t.parameters)==null?void 0:p.docs)==null?void 0:c.source}}};const h=["Sizes","Hoverable"];export{t as Hoverable,i as Sizes,h as __namedExportsOrder,L as default};

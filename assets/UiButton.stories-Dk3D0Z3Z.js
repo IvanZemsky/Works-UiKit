@@ -1,14 +1,14 @@
-import{_ as n}from"./UiButton-DRWQtEiW.js";import{S as w}from"./SearchOutlined-B8iNvvoD.js";import"./vue.esm-bundler-CviTMTQO.js";import"./clsx-B-dksMZM.js";const z={component:n,title:"Button",tags:["autodocs"]},e={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
+import{_ as n}from"./UiButton-BRic7zc7.js";import{S}from"./SearchOutlined-ZLLar4o1.js";import"./vue.esm-bundler-DxjQ3HK0.js";import"./clsx-B-dksMZM.js";const z={component:n,title:"Inputs/Button",tags:["autodocs"]},e={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
             <ui-button>Button</ui-button>
             <ui-button variant="outlined">Button</ui-button>
             <ui-button variant="ghost">Button</ui-button>
          </div>`})},o={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-button size="sm">Button</ui-button>
             <ui-button size="md">Button</ui-button>
             <ui-button size="lg">Button</ui-button>
-         </div>`})},u={render:t=>({components:{UiButton:n,SearchOutlined:w},setup(){return{args:t}},template:`
+         </div>`})},u={render:t=>({components:{UiButton:n,SearchOutlined:S},setup(){return{args:t}},template:`
          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
             <ui-button>
                <template #start-icon><SearchOutlined /></template>Start icon
@@ -30,18 +30,18 @@ import{_ as n}from"./UiButton-DRWQtEiW.js";import{S as w}from"./SearchOutlined-B
          </div>`})},r={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
          <ui-button v-bind="args" as="a" href="https://storybook.js.org/" target="_blank">
             Link to the official Storybook web site
-         </ui-button>`})},i={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
+         </ui-button>`})},a={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
             <ui-button>Button</ui-button>
             <ui-button variant="outlined">Button</ui-button>
             <ui-button variant="ghost">Button</ui-button>
          </div>
-          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
+          <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
             <ui-button color="secondary">Button</ui-button>
             <ui-button color="secondary" variant="outlined">Button</ui-button>
             <ui-button color="secondary" variant="ghost">Button</ui-button>
          </div>
-      `})};var a,s,l;e.parameters={...e.parameters,docs:{...(a=e.parameters)==null?void 0:a.docs,source:{originalSource:`{
+      `})};var i,s,l;e.parameters={...e.parameters,docs:{...(i=e.parameters)==null?void 0:i.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiButton
@@ -58,7 +58,7 @@ import{_ as n}from"./UiButton-DRWQtEiW.js";import{S as w}from"./SearchOutlined-B
             <ui-button variant="ghost">Button</ui-button>
          </div>\`
   })
-}`,...(l=(s=e.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};var p,c,m;o.parameters={...o.parameters,docs:{...(p=o.parameters)==null?void 0:p.docs,source:{originalSource:`{
+}`,...(l=(s=e.parameters)==null?void 0:s.docs)==null?void 0:l.source}}};var p,m,c;o.parameters={...o.parameters,docs:{...(p=o.parameters)==null?void 0:p.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiButton
@@ -69,13 +69,13 @@ import{_ as n}from"./UiButton-DRWQtEiW.js";import{S as w}from"./SearchOutlined-B
       };
     },
     template: \`
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-button size="sm">Button</ui-button>
             <ui-button size="md">Button</ui-button>
             <ui-button size="lg">Button</ui-button>
          </div>\`
   })
-}`,...(m=(c=o.parameters)==null?void 0:c.docs)==null?void 0:m.source}}};var d,b,g;u.parameters={...u.parameters,docs:{...(d=u.parameters)==null?void 0:d.docs,source:{originalSource:`{
+}`,...(c=(m=o.parameters)==null?void 0:m.docs)==null?void 0:c.source}}};var d,b,g;u.parameters={...u.parameters,docs:{...(d=u.parameters)==null?void 0:d.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiButton,
@@ -122,7 +122,7 @@ import{_ as n}from"./UiButton-DRWQtEiW.js";import{S as w}from"./SearchOutlined-B
             Link to the official Storybook web site
          </ui-button>\`
   })
-}`,...(f=(B=r.parameters)==null?void 0:B.docs)==null?void 0:f.source}}};var h,y,S;i.parameters={...i.parameters,docs:{...(h=i.parameters)==null?void 0:h.docs,source:{originalSource:`{
+}`,...(f=(B=r.parameters)==null?void 0:B.docs)==null?void 0:f.source}}};var h,y,x;a.parameters={...a.parameters,docs:{...(h=a.parameters)==null?void 0:h.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiButton
@@ -133,16 +133,16 @@ import{_ as n}from"./UiButton-DRWQtEiW.js";import{S as w}from"./SearchOutlined-B
       };
     },
     template: \`
-         <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
             <ui-button>Button</ui-button>
             <ui-button variant="outlined">Button</ui-button>
             <ui-button variant="ghost">Button</ui-button>
          </div>
-          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
+          <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
             <ui-button color="secondary">Button</ui-button>
             <ui-button color="secondary" variant="outlined">Button</ui-button>
             <ui-button color="secondary" variant="ghost">Button</ui-button>
          </div>
       \`
   })
-}`,...(S=(y=i.parameters)==null?void 0:y.docs)==null?void 0:S.source}}};const _=["Variant","Sizes","Icons","As","Colors"];export{r as As,i as Colors,u as Icons,o as Sizes,e as Variant,_ as __namedExportsOrder,z as default};
+}`,...(x=(y=a.parameters)==null?void 0:y.docs)==null?void 0:x.source}}};const _=["Variant","Sizes","Icons","As","Colors"];export{r as As,a as Colors,u as Icons,o as Sizes,e as Variant,_ as __namedExportsOrder,z as default};
