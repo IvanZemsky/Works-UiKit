@@ -25,7 +25,6 @@ const handleChange = () => {
 <template>
    <ui-check
       :size="size"
-      :name="name"
       :checked="modelValue.includes(name as string)"
       :label="label"
       @change="handleChange"

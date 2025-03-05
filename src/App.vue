@@ -2,43 +2,28 @@
 import "./styles/theme.css"
 import "./styles/reset.css"
 import { ref } from "vue"
-import UiSpacing from "./components/UiSpacing/UiSpacing.vue"
-import UiCheckGroup from "./components/UiCheckGroup/UiCheckGroup.vue"
-import UiCheckGroupItem from "./components/UiCheckGroup/UiCheckGroupItem.vue"
+import UiSelect from "./components/UiSelect/UiSelect.vue"
+import UiSelectItem from "./components/UiSelect/UiSelectItem.vue"
 
-const value = ref<string[]>([])
+const value = ref<string>()
 </script>
 
 <template>
    <div class="wrap">
       {{ JSON.stringify(value) }}
-      <ui-spacing align="center">
-         <ui-check-group title="Check group" size="lg" v-model="value">
-            <ui-check-group-item
-               id="example-check-group-sizes-sm"
-               name="example-check-group-sizes-sm"
-               value="check1"
-               label="Check 1"
-            />
-            <ui-check-group-item
-               id="example-check-group-sizes-md"
-               name="example-check-group-sizes-md"
-               value="check2"
-               label="Check 2"
-            />
-            <ui-check-group-item
-               id="example-check-group-sizes-lg"
-               name="example-check-group-sizes-lg"
-               value="check3"
-               label="Check 3"
-            />
-         </ui-check-group>
-      </ui-spacing>
+      <ui-select placeholder="Select" v-model="value">
+         <ui-select-item value="11">11</ui-select-item>
+         <ui-select-item value="22">22</ui-select-item>
+         <ui-select-item value="33">33</ui-select-item>
+      </ui-select>
    </div>
 </template>
 
 <style scoped>
 .wrap {
    padding: 15px;
+}
+.red {
+   background-color: red;
 }
 </style>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import clsx from "clsx";
+import clsx from "clsx"
 import "./UiRadio.css"
 import type { UiRadioProps } from "./UiRadio.props"
 import { useAttrs } from "vue"
 
 defineOptions({
-  inheritAttrs: false
+   inheritAttrs: false,
 })
 
 withDefaults(defineProps<UiRadioProps>(), {
@@ -16,7 +16,10 @@ const { class: className, style, ...inputAttrs } = useAttrs()
 </script>
 
 <template>
-   <div :class="clsx('ui-radio', `size-${size}`, { className })" :style="(style as string)">
+   <div
+      :class="clsx('ui-radio', `size-${size}`, className as string | undefined)"
+      :style="(style as string)"
+   >
       <input
          v-bind="inputAttrs"
          type="radio"

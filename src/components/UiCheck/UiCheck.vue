@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import clsx from "clsx";
+import clsx from "clsx"
 import "./UiCheck.css"
 import type { UiCheckProps } from "./UiCheck.props"
 import { useAttrs } from "vue"
 
 defineOptions({
-  inheritAttrs: false
+   inheritAttrs: false,
 })
 
 withDefaults(defineProps<UiCheckProps>(), {
@@ -16,7 +16,10 @@ const { class: className, style, ...inputAttrs } = useAttrs()
 </script>
 
 <template>
-   <div :class="clsx('ui-check', `size-${size}`, { className })" :style="(style as string)">
+   <div
+      :class="clsx('ui-check', `size-${size}`, className as string | undefined)"
+      :style="(style as string)"
+   >
       <input
          v-bind="inputAttrs"
          type="checkbox"

@@ -1,9 +1,9 @@
 import { ref } from "vue"
 
 /**
- * Функция для создания эффекта волны на элементе
- * @description Возвращает состояние активности волны и функцию нажатия
- * @param ms - Количество миллисекунд, должно быть равно длительности анимации
+ * Function for creating a wave effect on an element
+ * Returns the state of the wave and the function of pressing
+ * @param ms - The number of milliseconds should be equal to the animation duration
  */
 export function useWaveEffect(ms: number) {
    const isWaveActive = ref(false)

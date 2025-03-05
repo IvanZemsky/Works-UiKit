@@ -12,6 +12,7 @@ dist
 storybook-static
 dist-ssr
 *.local
+todo.txt
 
 # Editor directories and files
 .vscode/*
