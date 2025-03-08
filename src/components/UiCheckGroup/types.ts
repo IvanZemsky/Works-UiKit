@@ -2,7 +2,7 @@ import type { Ref } from "vue"
 import type { UiCheckProps } from "../UiCheck/UiCheck.props"
 
 export type UiCheckGroupProps = {
-   size: UiCheckProps["size"]
+   size?: UiCheckProps["size"]
    title?: string
    modelValue?: string[]
 }

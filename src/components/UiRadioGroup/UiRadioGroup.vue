@@ -2,9 +2,8 @@
 import "./UiRadioGroup.css"
 import clsx from "clsx"
 import UiSpacing from "../UiSpacing/UiSpacing.vue"
-import { provide, useAttrs } from "vue"
+import { computed, provide, useAttrs } from "vue"
 import type { UiRadioGroupProvide, UiRadioGroupProps } from "./types"
-import { useModelValue } from "../../lib/useModelValue"
 
 const props = withDefaults(defineProps<UiRadioGroupProps>(), {
    size: "md",
@@ -16,7 +15,12 @@ const attrs = useAttrs()
 
 const emit = defineEmits(["update:modelValue"])
 
-const modelValue = useModelValue(emit, props.modelValue)
+const modelValue = computed({
+   get: () => props.modelValue,
+   set: (value: string) => {
+      emit("update:modelValue", value)
+   },
+})
 
 provide<UiRadioGroupProvide>("ui-radio-group", {
    size: props.size,
@@ -26,11 +30,7 @@ provide<UiRadioGroupProvide>("ui-radio-group", {
 </script>
 
 <template>
-   <ui-spacing
-      :class="clsx('ui-radio-group', `size-${size}`)"
-      :gap="size"
-      vertical
-   >
+   <ui-spacing :class="clsx('ui-radio-group', `size-${size}`)" :gap="size" vertical>
       <p v-if="title" class="ui-radio-group__title">{{ title }}</p>
       <slot />
    </ui-spacing>

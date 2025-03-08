@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import "./UiSelect.css"
-import { provide, ref } from "vue"
+import { computed, provide, ref, Transition } from "vue"
 import type { UiSelectProps, UiSelectProvide } from "./types"
 import UiButton from "../UiButton/UiButton.vue"
 import UiSpacing from "../UiSpacing/UiSpacing.vue"
-import { useModelValue } from "../../lib/useModelValue"
 
 const props = withDefaults(defineProps<UiSelectProps>(), {
    modelValue: "",
@@ -18,7 +17,12 @@ const handleOpenClick = () => {
 
 const emit = defineEmits(["update:modelValue"])
 
-const modelValue = useModelValue(emit, props.modelValue)
+const modelValue = computed({
+   get: () => props.modelValue,
+   set: (value: string) => {
+      emit("update:modelValue", value)
+   },
+})
 
 provide<UiSelectProvide>("ui-select", {
    modelValue,
@@ -26,12 +30,14 @@ provide<UiSelectProvide>("ui-select", {
 </script>
 
 <template>
-   <div class="ui-select">
+   <ui-spacing class="ui-select" vertical gap="sm">
       <ui-button class="ui-select-button" variant="ghost" :onclick="handleOpenClick">
          {{ modelValue || placeholder }}
       </ui-button>
-      <ui-spacing v-if="isOpen" class="ui-select-options" vertical gap="sm">
-         <slot />
-      </ui-spacing>
-   </div>
+      <transition name="ui-select-fade">
+         <ui-spacing v-if="isOpen" class="ui-select-options" vertical gap="sm">
+            <slot />
+         </ui-spacing>
+      </transition>
+   </ui-spacing>
 </template>
