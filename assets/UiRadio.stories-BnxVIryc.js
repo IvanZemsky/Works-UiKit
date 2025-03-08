@@ -1,4 +1,4 @@
-import{_ as r}from"./UiRadio-CGZdO2xY.js";import"./vue.esm-bundler-DxjQ3HK0.js";import"./clsx-B-dksMZM.js";const n={title:"Inputs/Radio",component:r,tags:["autodocs"]},e={render:o=>({components:{UiRadio:r},setup(){return{args:o}},template:`
+import{_ as r}from"./UiRadio-BA8zSisq.js";import"./vue.esm-bundler-CeuXVXgz.js";import"./clsx-B-dksMZM.js";const n={title:"Inputs/Radio",component:r,tags:["autodocs"]},e={render:o=>({components:{UiRadio:r},setup(){return{args:o}},template:`
          <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-radio id="example-radio-sizes-sm" name="example-radio-sizes" size="sm" label="Radio 1"/>
             <ui-radio id="example-radio-sizes-md" name="example-radio-sizes" label="Radio 2"/>
