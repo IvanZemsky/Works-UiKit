@@ -2,11 +2,13 @@
    --primary-main: #0070ff;
    --primary-contrast: #ffffff;
    --primary-light: #7cb5ff;
+   --primary-extra-light: #e2e8ff;
    --primary-dark: #0057c8;
 
    --secondary-main: #2b2b2b;
    --secondary-contrast: #ffffff;
-   --secondary-light: #585858;
+   --secondary-light: #626262;
+   --secondary-extra-light: #e3e3e3;
    --secondary-dark: #151515;
 
    --neutral: #dcdcdc;

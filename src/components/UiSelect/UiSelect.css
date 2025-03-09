@@ -1,10 +1,27 @@
-.ui-select-button,
-.ui-select-options,
-.ui-select-option {
+.ui-select__button,
+.ui-select__options,
+.ui-select__option {
    width: 100%;
+   background-color: var(--primary-contrast);
+}
+
+.ui-select {
+   position: relative;
+   background-color: var(--primary-contrast);
+}
+
+.ui-select__options {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   padding: 0.5rem;
+   box-shadow: 0 0.2rem 1rem 0.2rem var(--neutral-light);
+   border-radius: 10px;
+   z-index: 998;
 }
 
 /* Transition */
+
 .ui-select-fade-enter-active,
 .ui-select-fade-leave-active {
    transition: all 0.3s ease;

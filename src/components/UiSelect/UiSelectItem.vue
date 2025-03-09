@@ -3,19 +3,31 @@ import { inject, ref } from "vue"
 import type { UiSelectItemProps, UiSelectProvide } from "./types"
 import UiButton from "../UiButton/UiButton.vue"
 
-const { value = "" } = defineProps<UiSelectItemProps>()
+const props = withDefaults(defineProps<UiSelectItemProps>(), {
+   value: "",
+})
 
-const { modelValue } = inject<UiSelectProvide>("ui-select", {
-   modelValue: ref(""),
+const {value, name} = props
+
+const { modelValue, size, isOpen } = inject<UiSelectProvide>("ui-select", {
+   size: "md",
+   modelValue: ref({ selectedValue: "", name: "" }),
+   isOpen: ref(false),
 })
 
 const handleClick = () => {
-   modelValue.value = value
+   modelValue.value = { selectedValue: value, name }
+   isOpen.value = false
 }
 </script>
 
 <template>
-   <ui-button :onclick="handleClick" class="ui-select-option" variant="ghost">
+   <ui-button
+      :onclick="handleClick"
+      class="ui-select__option"
+      variant="ghost"
+      :size="size"
+   >
       <slot />
    </ui-button>
 </template>
