@@ -1,4 +1,4 @@
-import{_ as n}from"./UiButton-BJ33TdDz.js";import{S}from"./SearchOutlined-DHhoHvP0.js";import"./vue.esm-bundler-CeuXVXgz.js";import"./clsx-B-dksMZM.js";const z={component:n,title:"Inputs/Button",tags:["autodocs"]},e={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
+import{_ as n}from"./UiButton-DxwDU5KG.js";import{S}from"./SearchOutlined-jjDlRsfN.js";import"./vue.esm-bundler-DL4AlWau.js";import"./clsx-B-dksMZM.js";const z={component:n,title:"Inputs/Button",tags:["autodocs"]},e={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
             <ui-button>Button</ui-button>
             <ui-button variant="outlined">Button</ui-button>
