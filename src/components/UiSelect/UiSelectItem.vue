@@ -28,6 +28,6 @@ const handleClick = () => {
       variant="ghost"
       :size="size"
    >
-      <slot />
+      {{ name }}
    </ui-button>
 </template>

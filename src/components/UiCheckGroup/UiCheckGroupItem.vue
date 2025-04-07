@@ -11,13 +11,14 @@ const { size, modelValue } = inject<UiCheckGroupProvide>("ui-check-group", {
    modelValue: ref([]),
 })
 
-const { name } = useAttrs()
+const { value } = useAttrs()
 
 const handleChange = () => {
-   if (modelValue.value.includes(name as string)) {
-      modelValue.value = modelValue.value.filter((item) => item !== name)
+   const isAlreadyChecked = modelValue.value.includes(String(value))
+   if (isAlreadyChecked) {
+      modelValue.value = modelValue.value.filter((item) => item !== value)
    } else {
-      modelValue.value.push(name as string)
+      modelValue.value.push(String(value))
    }
 }
 </script>
@@ -25,7 +26,7 @@ const handleChange = () => {
 <template>
    <ui-check
       :size="size"
-      :checked="modelValue.includes(name as string)"
+      :checked="modelValue.includes(String(value))"
       :label="label"
       @change="handleChange"
    />
