@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import "./UiSelect.css"
-import { computed, provide, ref, Transition } from "vue"
+import { computed, provide, ref } from "vue"
 import type { UiSelectProps, UiSelectProvide, UiSelectValue } from "./types"
 import UiButton from "../UiButton/UiButton.vue"
 import UiSpacing from "../UiSpacing/UiSpacing.vue"
