@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import "./UiSelect.css"
-import { computed, provide, ref } from "vue"
+import { provide, ref } from "vue"
 import type { UiSelectProps, UiSelectProvide, UiSelectValue } from "./types"
 import UiButton from "../UiButton/UiButton.vue"
 import UiSpacing from "../UiSpacing/UiSpacing.vue"
@@ -8,21 +8,17 @@ import UiSpacing from "../UiSpacing/UiSpacing.vue"
 const props = withDefaults(defineProps<UiSelectProps>(), {
    size: "md",
 })
+const emit = defineEmits(["update:modelValue"])
+const modelValue = defineModel<UiSelectValue>({
+   required: true,
+   default: { selectedValue: "", name: "" },
+})
 
 const isOpen = ref(false)
 
 const handleOpenClick = () => {
    isOpen.value = !isOpen.value
 }
-
-const emit = defineEmits(["update:modelValue"])
-
-const modelValue = computed({
-   get: () => props.modelValue,
-   set: (value: UiSelectValue) => {
-      emit("update:modelValue", value)
-   },
-})
 
 provide<UiSelectProvide>("ui-select", {
    size: props.size,
@@ -39,7 +35,7 @@ provide<UiSelectProvide>("ui-select", {
          :size="size"
          :onclick="handleOpenClick"
       >
-         {{ modelValue?.name || placeholder }}
+         {{ modelValue?.label || placeholder }}
       </ui-button>
       <transition name="ui-select-fade">
          <ui-spacing v-if="isOpen" class="ui-select__options" vertical gap="sm">

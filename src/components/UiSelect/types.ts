@@ -16,7 +16,7 @@ export type UiSelectProps = {
 
 export type UiSelectItemProps = {
    value: string
-   name: string
+   label: string
 }
 
 export type UiSelectProvide = {
@@ -27,5 +27,5 @@ export type UiSelectProvide = {
 
 export type UiSelectValue = {
    selectedValue: string
-   name: string
+   label: string
 }

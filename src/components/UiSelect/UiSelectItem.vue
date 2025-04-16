@@ -7,16 +7,16 @@ const props = withDefaults(defineProps<UiSelectItemProps>(), {
    value: "",
 })
 
-const {value, name} = props
+const { value, label } = props
 
 const { modelValue, size, isOpen } = inject<UiSelectProvide>("ui-select", {
    size: "md",
-   modelValue: ref({ selectedValue: "", name: "" }),
    isOpen: ref(false),
+   modelValue: ref({ selectedValue: "", label: "" }),
 })
 
 const handleClick = () => {
-   modelValue.value = { selectedValue: value, name }
+   modelValue.value = { selectedValue: value, label }
    isOpen.value = false
 }
 </script>
@@ -28,6 +28,6 @@ const handleClick = () => {
       variant="ghost"
       :size="size"
    >
-      {{ name }}
+      {{ label }}
    </ui-button>
 </template>
