@@ -9,7 +9,8 @@ export default defineConfig({
    plugins: [
       vue(),
       dts({
-         insertTypesEntry: true,
+         rollupTypes: true,
+         tsconfigPath: "./tsconfig.app.json",
       }),
    ],
    build: {
@@ -21,9 +22,10 @@ export default defineConfig({
       rollupOptions: {
          external: ["vue", "vue-router"],
          output: {
+            exports: "named",
             globals: {
                vue: "Vue",
-               vueRouter: "VueRouter",
+              "vue-router": "VueRouter",
             },
          },
       },

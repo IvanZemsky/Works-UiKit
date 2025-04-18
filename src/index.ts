@@ -15,7 +15,7 @@ import UiSpacing from "./components/UiSpacing/UiSpacing.vue"
 import UiCard from "./components/UiCard/UiCard.vue"
 
 import type { UiButtonProps } from "./components/UiButton/UiButton.props"
-import type { UiSelectItemProps } from "./components/UiSelect/types"
+import type { UiSelectItemProps, UiSelectProps, UiSelectValue } from "./components/UiSelect/types"
 import type { UiInputProps } from "./components/UiInput/UiInput.props"
 import type { UiCheckGroupProps } from "./components/UiCheckGroup/types"
 import type { UiCardProps } from "./components/UiCard/UiCard.props"
@@ -41,6 +41,8 @@ export {
 export type {
    UiButtonProps,
    UiSelectItemProps,
+   UiSelectProps,
+   UiSelectValue,
    UiInputProps,
    UiCheckGroupProps,
    UiCheckProps,
