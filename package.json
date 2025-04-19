@@ -19,7 +19,7 @@
    },
    "exports": {
       ".": {
-                  "types": "./dist/index.d.ts",
+         "types": "./dist/index.d.ts",
          "import": "./dist/work-ui.es.js",
          "require": "./dist/work-ui.umd.js"
       },

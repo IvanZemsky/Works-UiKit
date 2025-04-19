@@ -10,12 +10,12 @@ import UiRadio from "./components/UiRadio/UiRadio.vue"
 import UiRadioGroup from "./components/UiRadioGroup/UiRadioGroup.vue"
 import UiRadioGroupItem from "./components/UiRadioGroup/UiRadioGroupItem.vue"
 import UiSelect from "./components/UiSelect/UiSelect.vue"
-import UiSelectItem from "./components/UiSelect/UiSelectItem.vue"
+import UiSelectOption from "./components/UiSelect/UiSelectOption.vue"
 import UiSpacing from "./components/UiSpacing/UiSpacing.vue"
 import UiCard from "./components/UiCard/UiCard.vue"
 
 import type { UiButtonProps } from "./components/UiButton/UiButton.props"
-import type { UiSelectItemProps, UiSelectProps, UiSelectValue } from "./components/UiSelect/types"
+import type { UiSelectOptionProps, UiSelectProps } from "./components/UiSelect/types"
 import type { UiInputProps } from "./components/UiInput/UiInput.props"
 import type { UiCheckGroupProps } from "./components/UiCheckGroup/types"
 import type { UiCardProps } from "./components/UiCard/UiCard.props"
@@ -33,16 +33,15 @@ export {
    UiRadioGroup,
    UiRadioGroupItem,
    UiSelect,
-   UiSelectItem,
+   UiSelectOption,
    UiSpacing,
    UiCard,
 }
 
 export type {
    UiButtonProps,
-   UiSelectItemProps,
+   UiSelectOptionProps,
    UiSelectProps,
-   UiSelectValue,
    UiInputProps,
    UiCheckGroupProps,
    UiCheckProps,
