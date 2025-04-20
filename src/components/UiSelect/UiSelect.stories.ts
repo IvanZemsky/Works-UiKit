@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/vue3"
 import UiSelect from "./UiSelect.vue"
-import UiSelectItem from "./UiSelectOption.vue"
 import { ref } from "vue"
+import UiSelectOption from "./UiSelectOption.vue"
 
 const meta: Meta = {
    title: "Inputs/Select",
@@ -13,14 +13,14 @@ type Story = StoryObj<typeof UiSelect>
 
 export const Default: Story = {
    render: (args) => ({
-      components: { UiSelect, UiSelectItem },
+      components: { UiSelect, UiSelectOption },
       setup() {
          const value1 = ref("")
          return { args, value1 }
       },
       template: `
          <div style="height: 200px">
-            <ui-select placeholder="Select an option" style="width: 300px" v-model="value1">
+            <ui-select placeholder="Select an option" name="select-example-1" style="width: 300px" v-model="value1">
                <ui-select-option value="option-1" label="Option 1"/>
                <ui-select-option value="option-2" label="Option 2"/>
                <ui-select-option value="option-3" label="Option 3"/>
@@ -32,7 +32,7 @@ export const Default: Story = {
 
 export const Sizes: Story = {
    render: (args) => ({
-      components: { UiSelect, UiSelectItem },
+      components: { UiSelect, UiSelectOption },
       setup() {
          const value1 = ref("")
          const value2 = ref("")

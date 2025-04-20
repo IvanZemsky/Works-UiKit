@@ -12,6 +12,7 @@ const props = withDefaults(defineProps<UiCheckGroupProps>(), {
 
 const model = defineModel<unknown[]>({
    required: true,
+   default: [],
 })
 
 const { name } = useAttrs()
