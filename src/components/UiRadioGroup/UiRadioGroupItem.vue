@@ -6,19 +6,33 @@ import type { UiRadioProps } from "../UiRadio/UiRadio.props"
 
 defineProps<UiRadioProps>()
 
-const { size, name, modelValue } = inject<UiRadioGroupProvide>("ui-radio-group", {
+const { size, name, model } = inject<UiRadioGroupProvide>("ui-radio-group", {
    size: "md",
    name: "",
-   modelValue: ref(""),
+   model: ref(),
 })
 
-const { value } = useAttrs()
+const { value, id: radioId } = useAttrs()
+
+const id = radioId || setId()
 
 const handleChange = () => {
-   modelValue.value = value as string
+   model.value = value
+}
+
+function setId() {
+   return `${name}-${value}`
 }
 </script>
 
 <template>
-   <ui-radio :size="size" :name="name" :label="label" @change="handleChange" />
+   <ui-radio
+      :size="size"
+      :name="name"
+      :id="id"
+      :value="value"
+      :label="label"
+      :checked="model === value"
+      @change="handleChange"
+   />
 </template>

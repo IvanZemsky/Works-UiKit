@@ -36,6 +36,7 @@
 }
 
 .ui-radio label {
+   margin-top: 0.1rem;
    cursor: pointer;
 }
 
@@ -112,6 +113,7 @@
 }
 
 .ui-radio.size-sm label {
+   margin-top: 0.02rem;
    font-size: 0.9rem;
 }
 

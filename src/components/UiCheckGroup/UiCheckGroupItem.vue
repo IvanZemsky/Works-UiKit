@@ -6,28 +6,37 @@ import type { UiCheckProps } from "../UiCheck/UiCheck.props"
 
 defineProps<UiCheckProps>()
 
-const { size, modelValue } = inject<UiCheckGroupProvide>("ui-check-group", {
+const { size, model, name } = inject<UiCheckGroupProvide>("ui-check-group", {
    size: "md",
-   modelValue: ref([]),
+   name: "",
+   model: ref([]),
 })
 
-const { value } = useAttrs()
+const { value, id: checkId } = useAttrs()
+
+const id = checkId || setId()
 
 const handleChange = () => {
-   const isAlreadyChecked = modelValue.value.includes(String(value))
+   const isAlreadyChecked = model.value.includes(value)
    if (isAlreadyChecked) {
-      modelValue.value = modelValue.value.filter((item) => item !== value)
+      model.value = model.value.filter((item) => item !== value)
    } else {
-      modelValue.value.push(String(value))
+      model.value.push(value)
    }
+}
+
+function setId() {
+   return `${name}-${value}`
 }
 </script>
 
 <template>
    <ui-check
       :size="size"
-      :checked="modelValue.includes(String(value))"
+      :checked="model.includes(value)"
       :label="label"
+      :id="id"
+      :name="name"
       @change="handleChange"
    />
 </template>

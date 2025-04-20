@@ -1,7 +1,29 @@
 {
    "name": "work-ui",
+   "description": "Simple Vue 3 UI library",
    "private": false,
    "version": "0.0.0",
+   "author": {
+      "name": "Ivan Kopytin",
+      "nickname": "IvanZemsky",
+      "email": "i.ivanzemsky2005@gmail.com",
+      "github": "https://github.com/IvanZemsky"
+   },
+   "keywords": [
+      "vue3",
+      "ui",
+      "ui-kit",
+      "vue-components"
+   ],
+   "license": "MIT",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/IvanZemsky/Works-UiKit.git"
+   },
+   "bugs": {
+      "url": "https://github.com/IvanZemsky/Works-UiKit/issues"
+   },
+   "homepage": "https://ivanzemsky.github.io/Works-UiKit",
    "files": [
       "dist"
    ],

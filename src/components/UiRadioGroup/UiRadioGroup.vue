@@ -2,30 +2,21 @@
 import "./UiRadioGroup.css"
 import clsx from "clsx"
 import UiSpacing from "../UiSpacing/UiSpacing.vue"
-import { computed, provide, useAttrs } from "vue"
+import { provide } from "vue"
 import type { UiRadioGroupProvide, UiRadioGroupProps } from "./types"
 
 const props = withDefaults(defineProps<UiRadioGroupProps>(), {
    size: "md",
    title: "",
-   modelValue: "",
+   name: "",
 })
 
-const attrs = useAttrs()
-
-const emit = defineEmits(["update:modelValue"])
-
-const modelValue = computed({
-   get: () => props.modelValue,
-   set: (value: string) => {
-      emit("update:modelValue", value)
-   },
-})
+const model = defineModel<unknown>()
 
 provide<UiRadioGroupProvide>("ui-radio-group", {
    size: props.size,
-   name: (attrs.name as string) || "",
-   modelValue,
+   name: props.name,
+   model,
 })
 </script>
 

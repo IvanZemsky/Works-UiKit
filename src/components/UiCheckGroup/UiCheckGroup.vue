@@ -3,25 +3,23 @@ import "./UiCheckGroup.css"
 import clsx from "clsx"
 import UiSpacing from "../UiSpacing/UiSpacing.vue"
 import type { UiCheckGroupProps, UiCheckGroupProvide } from "./types"
-import { computed, provide } from "vue"
+import { provide, defineModel, useAttrs } from "vue"
 
 const props = withDefaults(defineProps<UiCheckGroupProps>(), {
    size: "md",
    title: "",
 })
 
-const emit = defineEmits(["update:modelValue"])
-
-const modelValue = computed({
-   get: () => props.modelValue || [],
-   set: (value: string[]) => {
-      emit("update:modelValue", value)
-   },
+const model = defineModel<unknown[]>({
+   required: true,
 })
+
+const { name } = useAttrs()
 
 provide<UiCheckGroupProvide>("ui-check-group", {
    size: props.size,
-   modelValue,
+   name: name as string,
+   model,
 })
 </script>
 
