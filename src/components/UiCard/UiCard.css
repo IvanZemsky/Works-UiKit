@@ -1,6 +1,7 @@
 .ui-card{
    width: fit-content;
    border: 1px solid var(--neutral);
+   background-color: var(--primary-contrast);
 }
 
 .ui-card.hoverable{

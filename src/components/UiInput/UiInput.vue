@@ -5,7 +5,7 @@ import type { UiInputProps } from "./UiInput.props"
 import { useAttrs } from "vue"
 
 defineOptions({
-  inheritAttrs: false
+   inheritAttrs: false,
 })
 
 withDefaults(defineProps<UiInputProps>(), {
