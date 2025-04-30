@@ -13,6 +13,7 @@ import UiSelect from "./components/UiSelect/UiSelect.vue"
 import UiSelectOption from "./components/UiSelect/UiSelectOption.vue"
 import UiSpacing from "./components/UiSpacing/UiSpacing.vue"
 import UiCard from "./components/UiCard/UiCard.vue"
+import UiLink from "./components/UiLink/UiLink.vue"
 
 import type { UiButtonProps } from "./components/UiButton/UiButton.props"
 import type { UiSelectOptionProps, UiSelectProps } from "./components/UiSelect/types"
@@ -22,6 +23,7 @@ import type { UiCardProps } from "./components/UiCard/UiCard.props"
 import type { UiCheckProps } from "./components/UiCheck/UiCheck.props"
 import type { UiRadioProps } from "./components/UiRadio/UiRadio.props"
 import type { UiRadioGroupProps } from "./components/UiRadioGroup/types"
+import type { UiLinkProps } from "./components/UiLink/UiLink.props"
 
 export {
    UiButton,
@@ -36,6 +38,7 @@ export {
    UiSelectOption,
    UiSpacing,
    UiCard,
+   UiLink,
 }
 
 export type {
@@ -48,4 +51,5 @@ export type {
    UiCardProps,
    UiRadioProps,
    UiRadioGroupProps,
+   UiLinkProps,
 }
