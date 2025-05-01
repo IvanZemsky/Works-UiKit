@@ -1,4 +1,4 @@
-import{_ as n}from"./UiSpacing-SAVbUipj.js";import{_ as u}from"./UiButton-q_DCG-TJ.js";import"./vue.esm-bundler-CQL4Gtwv.js";import"./clsx-B-dksMZM.js";const _={component:n,title:"Spacing",tags:["autodocs"]},i={render:t=>({components:{UiSpacing:n,UiButton:u},setup(){return{args:t}},template:`
+import{_ as n}from"./UiSpacing-BOT-jzrt.js";import{_ as u}from"./UiButton-G9A-ANg7.js";import"./vue.esm-bundler-2rTkCq1z.js";import"./clsx-B-dksMZM.js";import"./useWaveEffect-C87qeCCn.js";import"./vue-router-DgItWFCF.js";const A={component:n,title:"Layout/Spacing",tags:["autodocs"]},i={render:t=>({components:{UiSpacing:n,UiButton:u},setup(){return{args:t}},template:`
          <ui-spacing vertical>
             <ui-spacing gap="sm" wrap>
                <ui-button>Element 1</ui-button>
@@ -221,4 +221,4 @@ import{_ as n}from"./UiSpacing-SAVbUipj.js";import{_ as u}from"./UiButton-q_DCG-
          </ui-spacing>
       \`
   })
-}`,...(S=(z=s.parameters)==null?void 0:z.docs)==null?void 0:S.source}}};const x=["Gap","Justify","Align","Vertical","Reverse"];export{o as Align,i as Gap,e as Justify,s as Reverse,a as Vertical,x as __namedExportsOrder,_ as default};
+}`,...(S=(z=s.parameters)==null?void 0:z.docs)==null?void 0:S.source}}};const G=["Gap","Justify","Align","Vertical","Reverse"];export{o as Align,i as Gap,e as Justify,s as Reverse,a as Vertical,G as __namedExportsOrder,A as default};

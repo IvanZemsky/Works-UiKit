@@ -1,4 +1,4 @@
-import{_ as n}from"./UiButton-q_DCG-TJ.js";import{S}from"./SearchOutlined-Du5y9v65.js";import"./vue.esm-bundler-CQL4Gtwv.js";import"./clsx-B-dksMZM.js";const z={component:n,title:"Inputs/Button",tags:["autodocs"]},e={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
+import{_ as n}from"./UiButton-G9A-ANg7.js";import{S}from"./SearchOutlined-DtLU7eq6.js";import"./vue.esm-bundler-2rTkCq1z.js";import"./clsx-B-dksMZM.js";import"./useWaveEffect-C87qeCCn.js";import"./vue-router-DgItWFCF.js";const E={component:n,title:"Inputs/Button",tags:["autodocs"]},e={render:t=>({components:{UiButton:n},setup(){return{args:t}},template:`
          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
             <ui-button>Button</ui-button>
             <ui-button variant="outlined">Button</ui-button>
@@ -145,4 +145,4 @@ import{_ as n}from"./UiButton-q_DCG-TJ.js";import{S}from"./SearchOutlined-Du5y9v
          </div>
       \`
   })
-}`,...(x=(y=a.parameters)==null?void 0:y.docs)==null?void 0:x.source}}};const _=["Variant","Sizes","Icons","As","Colors"];export{r as As,a as Colors,u as Icons,o as Sizes,e as Variant,_ as __namedExportsOrder,z as default};
+}`,...(x=(y=a.parameters)==null?void 0:y.docs)==null?void 0:x.source}}};const I=["Variant","Sizes","Icons","As","Colors"];export{r as As,a as Colors,u as Icons,o as Sizes,e as Variant,I as __namedExportsOrder,E as default};
