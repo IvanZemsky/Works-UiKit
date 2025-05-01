@@ -5,7 +5,7 @@ import UiButton from "../UiButton/UiButton.vue"
 
 const meta: Meta = {
    component: UiCard,
-   title: "Card",
+   title: "Data display/Card",
    tags: ["autodocs"],
 }
 

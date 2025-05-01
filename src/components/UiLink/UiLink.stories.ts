@@ -3,7 +3,7 @@ import UiLink from "./UiLink.vue"
 
 const meta: Meta = {
    component: UiLink,
-   title: "Link",
+   title: "Data display/Link",
    tags: ["autodocs"],
 }
 

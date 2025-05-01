@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from "@storybook/vue3"
 const meta: Meta = {
    component: UiChip,
 
-   title: "Inputs/Chip",
+   title: "Data display/Chip",
    tags: ["autodocs"],
 }
 
