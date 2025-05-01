@@ -1,7 +1,8 @@
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
-import dts from 'vite-plugin-dts';
+import dts from "vite-plugin-dts"
 import path from "path"
+import { fileURLToPath } from "url"
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -12,6 +13,11 @@ export default defineConfig({
          tsconfigPath: "./tsconfig.app.json",
       }),
    ],
+   resolve: {
+      alias: {
+         "@": fileURLToPath(new URL("./src", import.meta.url)),
+      },
+   },
    build: {
       lib: {
          entry: path.resolve(__dirname, "src/index.ts"),
@@ -24,7 +30,7 @@ export default defineConfig({
             exports: "named",
             globals: {
                vue: "Vue",
-              "vue-router": "VueRouter",
+               "vue-router": "VueRouter",
             },
          },
       },

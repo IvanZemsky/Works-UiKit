@@ -1,0 +1,24 @@
+.playground {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 35px;
+}
+
+.component {
+   padding: 20px;
+   border: 1px solid black;
+   border-radius: 25px;
+}
+
+.component__title {
+   margin-bottom: 30px;
+   font-size: 22px;
+   font-weight: 600;
+}
+
+.component__items {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
