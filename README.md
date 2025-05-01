@@ -16,12 +16,14 @@ import "works-ui/dist/style.css"
 ```
 
 It contains all styles of components, theme variables and a simple reset of the basic browser styles.
+You don't have to import it if you want to create all the styles yourself.
 
 ### Completed components:
 * Button
 * Card
 * Check
 * Check Group
+* Chip
 * Input
 * Radio
 * Radio Group
