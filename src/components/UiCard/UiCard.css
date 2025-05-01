@@ -1,6 +1,6 @@
 .ui-card{
    width: fit-content;
-   border: 1px solid var(--neutral);
+   border: 1px solid var(--neutral-main);
    background-color: var(--primary-contrast);
 }
 

@@ -1,7 +1,7 @@
 import { ref } from "vue"
 
 /**
- * Function for creating a wave effect on an element
+ * Function for creating a wave effect on an element.
  * Returns the state of the wave and the function of pressing
  * @param ms - The number of milliseconds should be equal to the animation duration
  */

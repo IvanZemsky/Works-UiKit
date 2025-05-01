@@ -10,34 +10,6 @@ const meta: Meta = {
 
 type Story = StoryObj<typeof UiRadioGroup>
 
-export const Default: Story = {
-   render: (args) => ({
-      components: { UiRadioGroup, UiRadioGroupItem },
-      setup() {
-         return { args }
-      },
-      template: `
-         <ui-radio-group title="Radio group">
-             <ui-radio-group-item
-               id="example-radio-group-sizes-sm"
-               name="example-radio-group-sizes"
-               label="Radio 1"
-            />
-            <ui-radio-group-item
-               id="example-radio-group-sizes-md"
-               name="example-radio-group-sizes"
-               label="Radio 2"
-            />
-            <ui-radio-group-item
-               id="example-radio-group-sizes-lg"
-               name="example-radio-group-sizes"
-               label="Radio 3"
-            />
-         </ui-radio-group>
-      `,
-   }),
-}
-
 export const Sizes: Story = {
    render: (args) => ({
       components: { UiRadioGroup, UiRadioGroupItem },

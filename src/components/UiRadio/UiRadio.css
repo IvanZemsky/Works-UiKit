@@ -7,7 +7,7 @@
    appearance: none;
    flex-shrink: 0;
    aspect-ratio: 1 / 1;
-   border: 1px solid var(--neutral);
+   border: 1px solid var(--neutral-main);
    border-radius: 50%;
    cursor: pointer;
    padding: 0;

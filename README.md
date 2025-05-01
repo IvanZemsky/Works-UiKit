@@ -25,5 +25,7 @@ It contains all styles of components, theme variables and a simple reset of the 
 * Input
 * Radio
 * Radio Group
+* Link
 * Select
 * Spacing
+* Wrapper

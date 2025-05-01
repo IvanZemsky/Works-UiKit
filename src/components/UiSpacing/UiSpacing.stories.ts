@@ -4,7 +4,7 @@ import UiButton from "../UiButton/UiButton.vue"
 
 const meta: Meta = {
    component: UiSpacing,
-   title: "Spacing",
+   title: "Layout/Spacing",
    tags: ["autodocs"],
 }
 

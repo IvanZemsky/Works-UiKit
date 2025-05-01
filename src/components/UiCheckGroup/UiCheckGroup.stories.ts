@@ -11,22 +11,6 @@ const meta: Meta = {
 
 type Story = StoryObj<typeof UiCheckGroup>
 
-export const Default: Story = {
-   render: (args) => ({
-      components: { UiCheckGroupItem, UiCheckGroup },
-      setup() {
-         return { args }
-      },
-      template: `
-         <ui-check-group title="Check group">
-            <ui-check-group-item id="example-check-sizes-sm" label="Check 1"/>
-            <ui-check-group-item id="example-check-sizes-md" label="Check 2"/>
-            <ui-check-group-item id="example-check-sizes-lg" label="Check 3"/>
-         </ui-check-group>
-      `,
-   }),
-}
-
 export const Sizes: Story = {
    render: (args) => ({
       components: { UiCheckGroupItem, UiCheckGroup, UiSpacing },
