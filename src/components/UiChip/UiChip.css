@@ -232,7 +232,7 @@
    animation: wave-md 0.3s ease-in-out;
 }
 
-.size-sm.wave {
+.ui-chip.size-sm.wave {
    animation: wave-sm 0.3s ease-in-out;
 }
 

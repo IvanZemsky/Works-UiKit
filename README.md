@@ -19,6 +19,7 @@ It contains all styles of components, theme variables and a simple reset of the 
 You don't have to import it if you want to create all the styles yourself.
 
 ### Completed components:
+* Avatar
 * Button
 * Card
 * Check

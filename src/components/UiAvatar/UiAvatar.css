@@ -1,0 +1,33 @@
+.ui-avatar {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   background-color: var(--neutral-main);
+   color: var(--neutral-contrast);
+   overflow: hidden;
+}
+
+.ui-avatar img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.ui-avatar.size-lg {
+   width: 2.2rem;
+   height: 2.2rem;
+   font-size: 1.1rem;
+}
+
+.ui-avatar.size-md {
+   width: 2rem;
+   height: 2rem;
+   font-size: 1rem;
+}
+
+.ui-avatar.size-sm {
+   width: 1.8rem;
+   height: 1.8rem;
+   font-size: 0.9rem;
+}

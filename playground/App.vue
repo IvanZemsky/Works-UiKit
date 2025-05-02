@@ -2,6 +2,7 @@
 import UiLink from "../src/components/UiLink/UiLink.vue"
 import UiWrapper from "../src/components/UiWrapper/UiWrapper.vue"
 import UiChip from "../src/components/UiChip/UiChip.vue"
+import UiAvatar from "../src/components/UiAvatar/UiAvatar.vue"
 import PlComponent from "./components/PlComponent.vue"
 </script>
 
@@ -46,6 +47,12 @@ import PlComponent from "./components/PlComponent.vue"
          <ui-chip variant="outlined" clickable>Chip example</ui-chip>
          <ui-chip color="primary" variant="outlined" clickable>Chip example</ui-chip>
          <ui-chip color="secondary" variant="outlined" clickable>Chip example</ui-chip>
+      </PlComponent>
+      <PlComponent title="Avatar">
+         <ui-avatar size="lg" alt="FT" src="../src/components/UiAvatar/male-1.jpg" />
+         <ui-avatar size="lg" alt="FT" />
+         <ui-avatar size="md" alt="F" />
+         <ui-avatar size="sm" alt="F" />
       </PlComponent>
    </div>
 </template>
