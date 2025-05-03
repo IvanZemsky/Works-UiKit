@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { UiSpacingProps } from "./UiSpacing.props"
+import "./UiSpacing.css"
 
 withDefaults(defineProps<UiSpacingProps>(), {
    gap: "md",
@@ -10,17 +11,17 @@ withDefaults(defineProps<UiSpacingProps>(), {
    vertical: false,
 })
 
-const flexDirection = (
+const flexDirectionClass = (
    vertical: UiSpacingProps["vertical"],
    reverse: UiSpacingProps["reverse"],
 ) => {
-   if (vertical && !reverse) return "column"
-   if (vertical && reverse) return "column-reverse"
-   if (!vertical && reverse) return "row-reverse"
-   return "row" // (!vertical && !reverse)
+   if (vertical && !reverse) return "flex-col"
+   if (vertical && reverse) return "flex-col-reverse"
+   if (!vertical && reverse) return "flex-row-reverse"
+   return "flex-row"
 }
 
-const gapValue = (gap: UiSpacingProps["gap"]) => {
+const gapClass = (gap: UiSpacingProps["gap"]) => {
    if (Array.isArray(gap)) return `${gap[0]}px ${gap[1]}px`
 
    switch (gap) {
@@ -34,17 +35,21 @@ const gapValue = (gap: UiSpacingProps["gap"]) => {
          return "1rem"
    }
 }
+
+const wrapClass = (wrap: boolean) => (wrap ? "flex-wrap" : "flex-nowrap")
 </script>
 
 <template>
    <div
+      :class="[
+         'ui-spacing',
+         flexDirectionClass(vertical, reverse),
+         wrapClass(wrap),
+         `justify-${justify}`,
+         `align-${align}`,
+      ]"
       :style="{
-         display: 'flex',
-         justifyContent: justify,
-         alignItems: align,
-         flexDirection: flexDirection(vertical, reverse),
-         flexWrap: wrap ? 'wrap' : 'nowrap',
-         gap: gapValue(gap),
+         gap: gapClass(gap),
       }"
    >
       <slot />

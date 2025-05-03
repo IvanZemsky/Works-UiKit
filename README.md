@@ -30,5 +30,6 @@ You don't have to import it if you want to create all the styles yourself.
 * Radio Group
 * Link
 * Select
+* Skeleton
 * Spacing
 * Wrapper
