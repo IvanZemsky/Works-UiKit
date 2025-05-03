@@ -17,21 +17,24 @@
 }
 
 .ui-skeleton.variant-disc {
-   aspect-ratio: 1 / 1;
    width: auto;
    border-radius: 50%;
+   flex-shrink: 0;
 }
 
 .ui-skeleton.variant-disc.size-lg {
    width: 2.2rem;
+   height: 2.2rem;
 }
 
 .ui-skeleton.variant-disc.size-md {
    width: 2rem;
+   height: 2rem;
 }
 
 .ui-skeleton.variant-disc.size-sm {
    width: 1.8rem;
+   height: 1.8rem;
 }
 
 .ui-skeleton.animation-pulse {
@@ -41,12 +44,12 @@
 .ui-skeleton.animation-wave {
    background: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.1) 25%,
-      rgba(0, 0, 0, 0.2) 50%,
-      rgba(0, 0, 0, 0.1) 75%
+      rgba(0, 0, 0, 0.09) 25%,
+      rgba(0, 0, 0, 0.15) 50%,
+      rgba(0, 0, 0, 0.09) 75%
    );
-   background-size: 200% 100%; /* Увеличиваем фон, чтобы создать иллюзию движения */
-   animation: skeleton-wave 3s linear infinite; /* Запускаем анимацию */
+   background-size: 200% 100%;
+   animation: skeleton-wave 3s linear infinite;
 }
 
 @keyframes skeleton-pulse {
