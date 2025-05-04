@@ -27,8 +27,8 @@
    "files": [
       "dist"
    ],
-   "main": "dist/work-ui.umd.js",
-   "module": "dist/work-ui.es.js",
+   "main": "dist/works-ui.umd.js",
+   "module": "dist/works-ui.es.js",
    "typings": "./dist/index.d.ts",
    "type": "module",
    "scripts": {
