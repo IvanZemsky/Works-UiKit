@@ -2,7 +2,7 @@
    "name": "works-ui",
    "description": "Simple Vue 3 UI library",
    "private": false,
-   "version": "1.4.4",
+   "version": "1.4.5",
    "author": {
       "name": "Ivan Kopytin",
       "nickname": "IvanZemsky",
