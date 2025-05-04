@@ -21,8 +21,8 @@ export default defineConfig({
    build: {
       lib: {
          entry: path.resolve(__dirname, "src/index.ts"),
-         name: "work-ui",
-         fileName: (format) => `work-ui.${format}.js`,
+         name: "works-ui",
+         fileName: (format) => `works-ui.${format}.js`,
       },
       rollupOptions: {
          external: ["vue", "vue-router"],
