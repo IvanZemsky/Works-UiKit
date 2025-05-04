@@ -42,6 +42,9 @@ import type { UiAvatarProps } from "./components/UiAvatar/UiAvatar.props"
 import UiSkeleton from "./components/UiSkeleton/UiSkeleton.vue"
 import type { UiSkeletonProps } from "./components/UiSkeleton/UiSkeleton.props"
 
+import UiWrapper from "./components/UiWrapper/UiWrapper.vue"
+import type { UiWrapperProps } from "./components/UiWrapper/UiWrapper.props"
+
 export {
    UiButton,
    UiInput,
@@ -59,6 +62,7 @@ export {
    UiChip,
    UiAvatar,
    UiSkeleton,
+   UiWrapper,
 }
 
 export type {
@@ -76,4 +80,5 @@ export type {
    UiSpacingProps,
    UiAvatarProps,
    UiSkeletonProps,
+   UiWrapperProps,
 }
