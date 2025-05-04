@@ -27,8 +27,8 @@
    "files": [
       "dist"
    ],
-   "main": "dist/works-ui.umd.js",
-   "module": "dist/works-ui.es.js",
+   "main": "./dist/works-ui.umd.js",
+   "module": "./dist/works-ui.es.js",
    "typings": "./dist/index.d.ts",
    "type": "module",
    "scripts": {
@@ -45,7 +45,7 @@
          "import": "./dist/works-ui.es.js",
          "require": "./dist/works-ui.umd.js"
       },
-      "./dist/style.css": "./dist/works-ui.css"
+      "./styles.css": "./dist/works-ui.css"
    },
    "peerDependencies": {
       "vue": "^3.5.13",
