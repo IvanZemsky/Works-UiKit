@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import clsx from "clsx"
 import "./UiButton.css"
 import type { UiButtonProps } from "./UiButton.props"
 import { useWaveEffect } from "../../lib/useWaveEffect"
@@ -21,11 +20,13 @@ const { isWaveActive, handleClick } = useWaveEffect(300)
 
 <template>
    <Tag
-      :class="
-         clsx('ui-button', `variant-${variant}`, `size-${size}`, `color-${color}`, {
-            wave: isWaveActive && variant !== 'ghost',
-         })
-      "
+      :class="[
+         'ui-button',
+         `variant-${variant}`,
+         `size-${size}`,
+         `color-${color}`,
+         { wave: isWaveActive && variant !== 'ghost' },
+      ]"
       @click="handleClick"
    >
       <slot name="start-icon" />

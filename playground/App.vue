@@ -5,6 +5,8 @@ import UiChip from "../src/components/UiChip/UiChip.vue"
 import UiAvatar from "../src/components/UiAvatar/UiAvatar.vue"
 import UiSkeleton from "../src/components/UiSkeleton/UiSkeleton.vue"
 import PlComponent from "./components/PlComponent.vue"
+import UiButton from "../src/components/UiButton/UiButton.vue"
+import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
 </script>
 
 <template>
@@ -67,6 +69,17 @@ import PlComponent from "./components/PlComponent.vue"
          <ui-skeleton class="skeleton" animation="pulse"/>
          <ui-skeleton class="skeleton" animation="wave"/>
          <ui-skeleton class="skeleton" animation="none"/>
+      </PlComponent>
+      <PlComponent title="Tooltip">
+         <ui-tooltip text="Tooltip text 123 123" size="sm">
+            <ui-button>Hover me</ui-button>
+         </ui-tooltip>
+         <ui-tooltip text="Tooltip text 456 456" size="md">
+            <ui-button>Hover me</ui-button>
+         </ui-tooltip>
+         <ui-tooltip text="Tooltip text 789 789" size="lg">
+            <ui-button>Hover me</ui-button>
+         </ui-tooltip>
       </PlComponent>
    </div>
 </template>

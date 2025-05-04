@@ -14,6 +14,7 @@
    border: none;
    outline: none;
    box-shadow: none;
+   background-color: inherit;
 }
 
 .ui-input input::placeholder{
@@ -47,6 +48,7 @@
 /* outlined */
 .ui-input.variant-outlined{
    border-color: var(--inactive);
+   background-color: var(--primary-contrast);
 }
 
 /* outlined:hover */

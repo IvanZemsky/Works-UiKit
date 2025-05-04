@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import clsx from "clsx"
 import "./UiChip.css"
 import type { UiChipProps } from "./UiChip.props"
-import { useWaveEffect } from "@/lib/useWaveEffect"
 
 withDefaults(defineProps<UiChipProps>(), {
    variant: "filled",
@@ -11,18 +9,19 @@ withDefaults(defineProps<UiChipProps>(), {
    clickable: false,
 })
 
-const { isWaveActive, handleClick } = useWaveEffect(300)
 </script>
 
 <template>
    <div
-      :class="
-         clsx('ui-chip', `variant-${variant}`, `color-${color}`, `size-${size}`, {
+      :class="[
+         'ui-chip',
+         `variant-${variant}`,
+         `color-${color}`,
+         `size-${size}`,
+         {
             clickable: clickable,
-            wave: isWaveActive && clickable,
-         })
-      "
-      @click="handleClick"
+         },
+      ]"
    >
       <slot name="start-icon" />
       <slot />

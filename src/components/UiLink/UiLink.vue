@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router"
 import type { UiLinkProps } from "./UiLink.props"
-import clsx from "clsx"
 import "./UiLink.css"
 
 const props = withDefaults(defineProps<UiLinkProps>(), {
@@ -19,15 +18,13 @@ const Tag = as === "router-link" ? RouterLink : as
 
 <template>
    <Tag
-      :class="
-         clsx(
-            'ui-link',
-            `size-${size}`,
-            `color-${color}`,
-            `hover-${hover}`,
-            `weight-${weight}`,
-         )
-      "
+      :class="[
+         'ui-link',
+         `size-${size}`,
+         `color-${color}`,
+         `hover-${hover}`,
+         `weight-${weight}`,
+      ]"
    >
       <slot name="start-icon" />
       <slot />

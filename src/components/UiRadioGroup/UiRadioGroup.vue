@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import "./UiRadioGroup.css"
-import clsx from "clsx"
 import UiSpacing from "../UiSpacing/UiSpacing.vue"
 import { provide } from "vue"
 import type { UiRadioGroupProvide, UiRadioGroupProps } from "./types"
@@ -21,7 +20,7 @@ provide<UiRadioGroupProvide>("ui-radio-group", {
 </script>
 
 <template>
-   <ui-spacing :class="clsx('ui-radio-group', `size-${size}`)" :gap="size" vertical>
+   <ui-spacing :class="['ui-radio-group', `size-${size}`]" :gap="size" vertical>
       <p v-if="title" class="ui-radio-group__title">{{ title }}</p>
       <slot />
    </ui-spacing>

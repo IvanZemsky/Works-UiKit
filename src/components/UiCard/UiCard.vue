@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import clsx from "clsx"
 import "./UiCard.css"
 import type { UiCardProps } from "./UiCard.props"
 
@@ -10,7 +9,7 @@ withDefaults(defineProps<UiCardProps>(), {
 </script>
 
 <template>
-   <div :class="clsx('ui-card', `size-${size}`, { hoverable })">
+   <div :class="['ui-card', `size-${size}`, { hoverable }]">
       <slot />
    </div>
 </template>

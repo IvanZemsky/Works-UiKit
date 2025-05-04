@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import clsx from "clsx"
 import "./UiCheck.css"
 import type { UiCheckProps } from "./UiCheck.props"
 import { useAttrs } from "vue"
@@ -17,7 +16,7 @@ const { class: className, style, ...inputAttrs } = useAttrs()
 
 <template>
    <div
-      :class="clsx('ui-check', `size-${size}`, className as string | undefined)"
+      :class="['ui-check', `size-${size}`, className]"
       :style="(style as string)"
    >
       <input

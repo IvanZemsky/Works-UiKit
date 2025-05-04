@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import clsx from "clsx"
 import "./UiAvatar.css"
 import type { UiAvatarProps } from "./UiAvatar.props"
 import { ref, onMounted } from "vue"
@@ -46,7 +45,7 @@ function setAvatarText(alt: string) {
 
 <template>
    <div
-      :class="clsx('ui-avatar', `size-${size}`)"
+      :class="['ui-avatar', `size-${size}`]"
       :style="`background-image: ${src && !imageLoaded ? 'none' : `url(${src})`}`"
    >
       <span v-if="!src && !imageLoaded">{{ avatarText }}</span>

@@ -8,6 +8,7 @@
    flex-shrink: 0;
    aspect-ratio: 1 / 1;
    border: 1px solid var(--neutral-main);
+   background-color: var(--primary-contrast);
    border-radius: 50%;
    cursor: pointer;
    padding: 0;
@@ -87,7 +88,7 @@
 }
 
 .ui-radio.size-md input:checked {
-   border-width: 0.4rem;
+   border-width: 0.35rem;
 }
 
 @media screen and (hover: hover) {
@@ -118,7 +119,7 @@
 }
 
 .ui-radio.size-sm input:checked {
-   border-width: 0.35rem;
+   border-width: 0.3rem;
 }
 
 @media screen and (hover: hover) {

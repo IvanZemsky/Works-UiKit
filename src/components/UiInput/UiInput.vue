@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import clsx from "clsx"
 import "./UiInput.css"
 import type { UiInputProps } from "./UiInput.props"
 import { useAttrs } from "vue"
@@ -19,16 +18,14 @@ const { class: className, style, ...inputAttrs } = useAttrs()
 
 <template>
    <div
-      :class="
-         clsx(
-            'ui-input',
-            `variant-${variant}`,
-            `size-${size}`,
-            `color-${color}`,
-            className as string,
-         )
-      "
-      :style="style as string"
+      :class="[
+         'ui-input',
+         `variant-${variant}`,
+         `size-${size}`,
+         `color-${color}`,
+         className,
+      ]"
+      :style="(style as string)"
    >
       <div v-if="$slots.icon" class="ui-input__icon-wrap">
          <slot name="icon" />

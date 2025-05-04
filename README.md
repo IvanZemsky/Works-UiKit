@@ -32,4 +32,5 @@ You don't have to import it if you want to create all the styles yourself.
 * Select
 * Skeleton
 * Spacing
+* Tooltip
 * Wrapper

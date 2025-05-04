@@ -6,7 +6,7 @@
    border: 1px solid;
    outline: none;
    user-select: none;
-   transition: all 0.15s linear, box-shadow 0.3s ease-in-out;
+   transition: all 0.15s linear;
    z-index: inherit;
 }
 
@@ -21,10 +21,6 @@
 /* COLORS*/
 
 /* Primary */
-
-.ui-chip.color-primary {
-   box-shadow: 0 0 0 0 var(--primary-light);
-}
 
 /* filled */
 .ui-chip.color-primary.variant-filled {
@@ -72,10 +68,6 @@
 
 /* Secondary */
 
-.ui-chip.color-secondary {
-   box-shadow: 0 0 0 0 var(--secondary-light);
-}
-
 /* filled */
 .ui-chip.color-secondary.variant-filled {
    background-color: var(--secondary-main);
@@ -121,10 +113,6 @@
 }
 
 /* Neutral */
-
-.ui-chip.color-neutral {
-   box-shadow: 0 0 0 0 var(--neutral-dark);
-}
 
 /* filled */
 .ui-chip.color-neutral.variant-filled {
@@ -222,34 +210,4 @@
 
 .ui-chip.size-sm svg:only-child {
    width: 0.8rem;
-}
-
-.ui-chip.size-lg.wave {
-   animation: wave-lg 0.3s ease-in-out;
-}
-
-.ui-chip.size-md.wave {
-   animation: wave-md 0.3s ease-in-out;
-}
-
-.ui-chip.size-sm.wave {
-   animation: wave-sm 0.3s ease-in-out;
-}
-
-@keyframes wave-lg {
-   100% {
-      box-shadow: 0 0 0 0.5rem transparent;
-   }
-}
-
-@keyframes wave-md {
-   100% {
-      box-shadow: 0 0 0 0.4rem transparent;
-   }
-}
-
-@keyframes wave-sm {
-   100% {
-      box-shadow: 0 0 0 0.3rem transparent;
-   }
 }
