@@ -16,6 +16,7 @@ const { as, variant, size, color } = props
 const Tag = as === "router-link" ? RouterLink : as
 
 const { isWaveActive, handleClick } = useWaveEffect(300)
+const hasWave = variant !== "ghost" && variant !== "light"
 </script>
 
 <template>
@@ -25,7 +26,7 @@ const { isWaveActive, handleClick } = useWaveEffect(300)
          `variant-${variant}`,
          `size-${size}`,
          `color-${color}`,
-         { wave: isWaveActive && variant !== 'ghost' },
+         { wave: isWaveActive && hasWave },
       ]"
       @click="handleClick"
    >

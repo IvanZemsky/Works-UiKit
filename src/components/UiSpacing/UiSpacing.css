@@ -1,5 +1,6 @@
 .ui-spacing {
    display: flex;
+   width: 100%;
 }
 
 .ui-spacing.flex-row {

@@ -62,13 +62,13 @@ import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
       <PlComponent title="Skeleton">
          <ui-skeleton size="lg" />
          <ui-skeleton size="md" />
-         <ui-skeleton size="sm"/>
-         <ui-skeleton size="lg" variant="disc"/>
-         <ui-skeleton size="md" variant="disc"/>
-         <ui-skeleton size="sm" variant="disc"/>
-         <ui-skeleton class="skeleton" animation="pulse"/>
-         <ui-skeleton class="skeleton" animation="wave"/>
-         <ui-skeleton class="skeleton" animation="none"/>
+         <ui-skeleton size="sm" />
+         <ui-skeleton size="lg" variant="disc" />
+         <ui-skeleton size="md" variant="disc" />
+         <ui-skeleton size="sm" variant="disc" />
+         <ui-skeleton class="skeleton" animation="pulse" />
+         <ui-skeleton class="skeleton" animation="wave" />
+         <ui-skeleton class="skeleton" animation="none" />
       </PlComponent>
       <PlComponent title="Tooltip">
          <ui-tooltip text="Tooltip text 123 123" size="sm">
@@ -81,6 +81,13 @@ import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
             <ui-button>Hover me</ui-button>
          </ui-tooltip>
       </PlComponent>
+      <PlComponent title="Button">
+         <ui-button>Button</ui-button>
+         <ui-button variant="outlined">Button</ui-button>
+         <ui-button variant="ghost">Button</ui-button>
+         <ui-button variant="light">Button</ui-button>
+         <ui-button variant="light" color="secondary">Button</ui-button>
+      </PlComponent>
    </div>
 </template>
 
@@ -91,7 +98,7 @@ import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
    gap: 20px;
    padding: 35px;
 }
-.ui-skeleton.skeleton{
+.ui-skeleton.skeleton {
    height: 100px;
 }
 </style>

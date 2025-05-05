@@ -88,6 +88,32 @@
    }
 }
 
+/* light */
+
+.ui-button.color-primary.variant-light {
+   background-color: var(--primary-extra-light);
+   border-color: var(--primary-extra-light);
+   color: var(--primary-dark);
+}
+
+@media screen and (hover: hover) {
+   .ui-button.color-primary.variant-light:hover {
+      background-color: var(--primary-extra-light);
+      filter: brightness(1.05);
+   }
+}
+.ui-button.color-primary.variant-light:active {
+   background-color: var(--primary-extra-light);
+   filter: brightness(0.98);
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-primary.variant-light:active {
+      background-color: var(--primary-extra-light);
+      filter: brightness(0.98);
+   }
+}
+
 /* Secondary */
 
 .ui-button.color-secondary {
@@ -157,6 +183,32 @@
 @media screen and (hover: none) {
    .ui-button.color-secondary.variant-ghost:active {
       background-color: var(--secondary-extra-light);
+   }
+}
+
+/* light */
+
+.ui-button.color-secondary.variant-light {
+   background-color: var(--secondary-extra-light);
+   border-color: var(--secondary-extra-light);
+   color: var(--secondary-dark);
+}
+
+@media screen and (hover: hover) {
+   .ui-button.color-secondary.variant-light:hover {
+      background-color: var(--secondary-extra-light);
+      filter: brightness(1.05);
+   }
+}
+.ui-button.color-secondary.variant-light:active {
+   background-color: var(--secondary-extra-light);
+   filter: brightness(0.98);
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-secondary.variant-light:active {
+      background-color: var(--secondary-extra-light);
+      filter: brightness(0.98);
    }
 }
 

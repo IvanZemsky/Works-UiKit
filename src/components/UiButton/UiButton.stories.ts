@@ -22,6 +22,7 @@ export const Variant: Story = {
             <ui-button>Button</ui-button>
             <ui-button variant="outlined">Button</ui-button>
             <ui-button variant="ghost">Button</ui-button>
+            <ui-button variant="light">Button</ui-button>
          </div>`,
    }),
 }
@@ -94,11 +95,13 @@ export const Colors: Story = {
             <ui-button>Button</ui-button>
             <ui-button variant="outlined">Button</ui-button>
             <ui-button variant="ghost">Button</ui-button>
+            <ui-button variant="light">Button</ui-button>
          </div>
           <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
             <ui-button color="secondary">Button</ui-button>
             <ui-button color="secondary" variant="outlined">Button</ui-button>
             <ui-button color="secondary" variant="ghost">Button</ui-button>
+            <ui-button variant="light" color="secondary">Button</ui-button>
          </div>
       `,
    }),
