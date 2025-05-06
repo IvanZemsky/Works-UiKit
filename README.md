@@ -5,6 +5,7 @@ A simple, lightweight open-source UI component library for building Vue 3 web ap
 ### Getting started
 
 Installation with npm:
+
 ```
 npm install works-ui
 ```
@@ -19,18 +20,20 @@ It contains all styles of components, theme variables and a simple reset of the 
 You don't have to import it if you want to create all the styles yourself.
 
 ### Completed components:
-* Avatar
-* Button
-* Card
-* Check
-* Check Group
-* Chip
-* Input
-* Radio
-* Radio Group
-* Link
-* Select
-* Skeleton
-* Spacing
-* Tooltip
-* Wrapper
+
+-  Avatar
+-  Button
+-  Card
+-  Check
+-  Check Group
+-  Chip
+-  Input
+-  Radio
+-  Radio Group
+-  Link
+-  Modal
+-  Select
+-  Skeleton
+-  Spacing
+-  Tooltip
+-  Wrapper

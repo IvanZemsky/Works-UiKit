@@ -5,6 +5,7 @@ import type { UiTooltipProps } from "./UiTooltip.props"
 
 withDefaults(defineProps<UiTooltipProps>(), {
    size: "md",
+   position: "bottom",
 })
 
 const isOpened = ref(false)
@@ -19,7 +20,7 @@ const handleMouseLeave = () => {
 
 <template>
    <div
-      :class="['ui-tooltip', `size-${size}`]"
+      :class="['ui-tooltip', `size-${size}`, `position-${position}`]"
       @mouseenter="handleMouseEnter"
       @mouseleave="handleMouseLeave"
    >

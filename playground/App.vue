@@ -7,6 +7,15 @@ import UiSkeleton from "../src/components/UiSkeleton/UiSkeleton.vue"
 import PlComponent from "./components/PlComponent.vue"
 import UiButton from "../src/components/UiButton/UiButton.vue"
 import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
+import UiModal from "../src/components/UiModal/UiModal.vue"
+import UiCard from "../src/components/UiCard/UiCard.vue"
+import { ref } from "vue"
+
+const modalOpened = ref(false)
+
+const openModal = () => {
+   modalOpened.value = true
+}
 </script>
 
 <template>
@@ -71,7 +80,7 @@ import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
          <ui-skeleton class="skeleton" animation="none" />
       </PlComponent>
       <PlComponent title="Tooltip">
-         <ui-tooltip text="Tooltip text 123 123" size="sm">
+         <ui-tooltip text="Tooltip text 123 123" position="top" size="sm">
             <ui-button>Hover me</ui-button>
          </ui-tooltip>
          <ui-tooltip text="Tooltip text 456 456" size="md">
@@ -87,6 +96,14 @@ import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
          <ui-button variant="ghost">Button</ui-button>
          <ui-button variant="light">Button</ui-button>
          <ui-button variant="light" color="secondary">Button</ui-button>
+      </PlComponent>
+      <PlComponent title="Modal">
+         <ui-button @click="openModal">Open modal</ui-button>
+         <ui-modal v-model="modalOpened" teleport="#modal">
+            <ui-card>
+               Modal inserted to #modal
+            </ui-card>
+         </ui-modal>
       </PlComponent>
    </div>
 </template>

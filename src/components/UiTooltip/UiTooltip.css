@@ -5,13 +5,10 @@
 
 .ui-tooltip__text {
    position: absolute;
-   top: calc(100% + 10px);
-   left: 50%;
-   transform: translate(-50%, 0);
    min-width: 100%;
    padding: 5px;
    border-radius: 6px;
-   background-color: rgba(0, 0, 0, 0.9);
+   background-color: var(--secondary-main);
    color: #fff;
    text-align: center;
    font-size: 0.8rem;
@@ -19,18 +16,45 @@
    z-index: 1;
 }
 
+/* arrow */
 .ui-tooltip__text:before {
    content: "";
    position: absolute;
-   top: -10px;
-   left: 50%;
    margin-left: -5px;
    border-width: 5px;
    border-style: solid;
-   border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+   border-color: transparent transparent var(--secondary-main) transparent;
    z-index: 2;
 }
 
+/* Position */
+
+/* bottom */
+
+.ui-tooltip.position-bottom .ui-tooltip__text {
+   top: calc(100% + 10px);
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+
+.ui-tooltip.position-bottom .ui-tooltip__text:before {
+   top: -10px;
+   left: 50%;
+}
+
+/* top */
+
+.ui-tooltip.position-top .ui-tooltip__text {
+   top: calc(-100%);
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+
+.ui-tooltip.position-top .ui-tooltip__text:before {
+   bottom: -10px;
+   left: 50%;
+   transform: rotate(180deg);
+}
 /* Sizes */
 
 /* large */
