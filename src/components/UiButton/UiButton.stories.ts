@@ -67,6 +67,15 @@ export const Icons: Story = {
             <ui-button>
                <SearchOutlined />
             </ui-button>
+            <ui-button variant="outlined">
+               <SearchOutlined />
+            </ui-button>
+            <ui-button variant="ghost">
+               <SearchOutlined />
+            </ui-button>
+            <ui-button variant="light">
+               <SearchOutlined />
+            </ui-button>
          </div>`,
    }),
 }

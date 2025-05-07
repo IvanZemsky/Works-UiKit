@@ -31,7 +31,7 @@ const hasWave = variant !== "ghost" && variant !== "light"
       @click="handleClick"
    >
       <slot name="start-icon" />
-      <slot />
+      <span class="ui-button__text"><slot/></span>
       <slot name="end-icon" />
    </Tag>
 </template>

@@ -10,6 +10,15 @@
    z-index: inherit;
 }
 
+.ui-button__text {
+   display: inline-block;
+   line-height: 1;
+}
+
+.ui-button__text:has(svg) {
+   display: contents;
+}
+
 .ui-button svg {
    flex-shrink: 0;
 }
@@ -225,10 +234,11 @@
 
 .ui-button.size-lg svg {
    width: 1.2rem;
+   height: auto;
 }
 
-.ui-button.size-lg svg:only-child {
-   width: 1.3rem;
+.ui-button:has(svg:only-child).size-lg {
+   padding: 0.6rem;
 }
 
 /* medium */
@@ -241,11 +251,12 @@
 }
 
 .ui-button.size-md svg {
-   width: 1rem;
+   width: 1.1rem;
+   height: auto;
 }
 
-.ui-button.size-md svg:only-child {
-   width: 1.1rem;
+.ui-button:has(svg:only-child).size-md {
+   padding: 0.5rem;
 }
 
 /* small */
@@ -258,11 +269,12 @@
 }
 
 .ui-button.size-sm svg {
-   width: 0.8rem;
+   width: 1rem;
+   height: auto;
 }
 
-.ui-button.size-sm svg:only-child {
-   width: 0.9rem;
+.ui-button:has(svg:only-child).size-sm {
+   padding: 0.4rem;
 }
 
 .ui-button.size-lg.wave {
@@ -273,7 +285,7 @@
    animation: wave-md 0.3s ease-in-out;
 }
 
-.size-sm.wave {
+.ui-button.size-sm.wave {
    animation: wave-sm 0.3s ease-in-out;
 }
 

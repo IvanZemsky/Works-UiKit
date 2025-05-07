@@ -9,6 +9,8 @@ import UiButton from "../src/components/UiButton/UiButton.vue"
 import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
 import UiModal from "../src/components/UiModal/UiModal.vue"
 import UiCard from "../src/components/UiCard/UiCard.vue"
+import UiSpacing from "../src/components/UiSpacing/UiSpacing.vue"
+import { MessageOutlined } from "@vicons/antd"
 import { ref } from "vue"
 
 const modalOpened = ref(false)
@@ -96,13 +98,32 @@ const openModal = () => {
          <ui-button variant="ghost">Button</ui-button>
          <ui-button variant="light">Button</ui-button>
          <ui-button variant="light" color="secondary">Button</ui-button>
+         <ui-spacing align="center" gap="md">
+            <ui-button size="sm"><message-outlined /></ui-button>
+            <ui-button size="sm">
+               <template #start-icon><message-outlined /></template>
+               Hover me
+            </ui-button>
+         </ui-spacing>
+         <ui-spacing align="center" gap="md">
+            <ui-button size="md"><message-outlined /></ui-button>
+            <ui-button size="md">
+               <template #start-icon><message-outlined /></template>
+               Hover me
+            </ui-button>
+         </ui-spacing>
+         <ui-spacing align="center" gap="md">
+            <ui-button size="lg"><message-outlined /></ui-button>
+            <ui-button size="lg">
+               <template #start-icon><message-outlined /></template>
+               Hover me
+            </ui-button>
+         </ui-spacing>
       </PlComponent>
       <PlComponent title="Modal">
          <ui-button @click="openModal">Open modal</ui-button>
          <ui-modal v-model="modalOpened" teleport="#modal">
-            <ui-card>
-               Modal inserted to #modal
-            </ui-card>
+            <ui-card>Modal inserted to #modal</ui-card>
          </ui-modal>
       </PlComponent>
    </div>
