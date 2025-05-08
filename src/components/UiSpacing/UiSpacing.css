@@ -2,6 +2,10 @@
    display: flex;
 }
 
+.ui-spacing.fill{
+   width: 100%;
+}
+
 .ui-spacing.flex-row {
    flex-direction: row;
 }

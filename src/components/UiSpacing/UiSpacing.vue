@@ -9,6 +9,7 @@ withDefaults(defineProps<UiSpacingProps>(), {
    reverse: false,
    wrap: false,
    vertical: false,
+   fill: true,
 })
 
 const flexDirectionClass = (
@@ -47,6 +48,9 @@ const wrapClass = (wrap: boolean) => (wrap ? "flex-wrap" : "flex-nowrap")
          wrapClass(wrap),
          `justify-${justify}`,
          `align-${align}`,
+         {
+            fill,
+         },
       ]"
       :style="{
          gap: gapClass(gap),

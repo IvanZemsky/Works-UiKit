@@ -2,7 +2,7 @@
    "name": "works-ui",
    "description": "Simple Vue 3 UI library",
    "private": false,
-   "version": "1.5.4",
+   "version": "1.5.5",
    "author": {
       "name": "Ivan Kopytin",
       "nickname": "IvanZemsky",
@@ -37,7 +37,7 @@
       "preview": "vite preview",
       "storybook": "storybook dev -p 6006",
       "build-storybook": "storybook build",
-      "deploy": "npm run build-storybook && gh-pages -d storybook-static"
+      "deploy": "npm run build && npm publish && npm run build-storybook && gh-pages -d storybook-static"
    },
    "exports": {
       ".": {

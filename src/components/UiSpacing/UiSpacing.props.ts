@@ -20,6 +20,11 @@ export type UiSpacingProps = {
    align?: "start" | "end" | "center" | "baseline" | "stretch"
 
    /**
+    * Defines if elements should fill the available space (width)
+   */
+   fill?: boolean
+
+   /**
     * Defines if elements should be stacked vertically
     * @default false
     */
