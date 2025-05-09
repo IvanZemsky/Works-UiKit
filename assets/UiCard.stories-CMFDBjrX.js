@@ -1,4 +1,4 @@
-import{_ as e}from"./UiCard-CdoDVen8.js";import{_ as c}from"./UiSpacing-CopImqSI.js";import{_ as d}from"./UiButton-DxcEY9_T.js";import"./vue.esm-bundler-DRdyH_Db.js";import"./vue-router-BbbCpkhz.js";const f={component:e,title:"Data display/Card",tags:["autodocs"]},i={render:n=>({components:{UiCard:e,UiSpacing:c,UiButton:d},setup(){return{args:n}},template:`
+import{_ as e}from"./UiCard-CdoDVen8.js";import{_ as c}from"./UiSpacing-CzwTO2Ox.js";import{_ as d}from"./UiButton-DxcEY9_T.js";import"./vue.esm-bundler-DRdyH_Db.js";import"./vue-router-BbbCpkhz.js";const f={component:e,title:"Data display/Card",tags:["autodocs"]},i={render:n=>({components:{UiCard:e,UiSpacing:c,UiButton:d},setup(){return{args:n}},template:`
       <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
          <ui-card size="sm">
             <ui-spacing vertical>
