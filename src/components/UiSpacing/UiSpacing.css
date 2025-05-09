@@ -1,6 +1,6 @@
 .ui-spacing {
    display: flex;
-   flex-shrink: 0;
+   flex-shrink: 1;
 }
 
 .ui-spacing.fill{
@@ -11,8 +11,8 @@
    flex-grow: 1;
 }
 
-.ui-spacing.shrink{
-   flex-shrink: 1
+.ui-spacing.no-shrink{
+   flex-shrink: 0
 }
 
 .ui-spacing.flex-row {

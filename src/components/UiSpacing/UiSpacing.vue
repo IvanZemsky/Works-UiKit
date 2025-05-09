@@ -11,7 +11,7 @@ withDefaults(defineProps<UiSpacingProps>(), {
    vertical: false,
    fill: false,
    grow: false,
-   shrink: false,
+   noShrink: false,
 })
 
 const flexDirectionClass = (
@@ -53,7 +53,7 @@ const wrapClass = (wrap: boolean) => (wrap ? "flex-wrap" : "flex-nowrap")
          {
             fill,
             grow,
-            shrink,
+            'no-shrink': noShrink,
          },
       ]"
       :style="{
