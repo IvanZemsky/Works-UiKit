@@ -9,7 +9,7 @@ withDefaults(defineProps<UiSpacingProps>(), {
    reverse: false,
    wrap: false,
    vertical: false,
-   fill: true,
+   fill: false,
    grow: false,
    shrink: false,
 })
