@@ -25,6 +25,16 @@ export type UiSpacingProps = {
    fill?: boolean
 
    /**
+    * flex-grow: 1
+    */
+   grow?: boolean
+
+   /**
+    * flex-shrink: 1
+    */
+   shrink?: boolean
+
+   /**
     * Defines if elements should be stacked vertically
     * @default false
     */

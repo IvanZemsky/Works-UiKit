@@ -1,9 +1,18 @@
 .ui-spacing {
    display: flex;
+   flex-shrink: 0;
 }
 
 .ui-spacing.fill{
    width: 100%;
+}
+
+.ui-spacing.grow{
+   flex-grow: 1;
+}
+
+.ui-spacing.shrink{
+   flex-shrink: 1
 }
 
 .ui-spacing.flex-row {
