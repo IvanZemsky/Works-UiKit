@@ -1,4 +1,4 @@
-import{_ as n}from"./UiSpacing-C7IGlZ0P.js";import{_ as u}from"./UiButton-DxcEY9_T.js";import"./vue.esm-bundler-DRdyH_Db.js";import"./vue-router-BbbCpkhz.js";const _={component:n,title:"Layout/Spacing",tags:["autodocs"]},i={render:t=>({components:{UiSpacing:n,UiButton:u},setup(){return{args:t}},template:`
+import{_ as n}from"./UiSpacing-DXrDKEui.js";import{_ as u}from"./UiButton-DxcEY9_T.js";import"./vue.esm-bundler-DRdyH_Db.js";import"./vue-router-BbbCpkhz.js";const _={component:n,title:"Layout/Spacing",tags:["autodocs"]},i={render:t=>({components:{UiSpacing:n,UiButton:u},setup(){return{args:t}},template:`
          <ui-spacing vertical>
             <ui-spacing gap="sm" wrap>
                <ui-button>Element 1</ui-button>
