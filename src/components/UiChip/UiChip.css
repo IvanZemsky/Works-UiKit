@@ -6,6 +6,7 @@
    border: 1px solid;
    outline: none;
    user-select: none;
+   line-height: 1;
    transition: all 0.15s linear;
    z-index: inherit;
 }
