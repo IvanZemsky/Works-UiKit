@@ -1,13 +1,13 @@
-import{d as O,c as U,p as s,l as k,o as z}from"./vue.esm-bundler-DRdyH_Db.js";import{S as V}from"./SearchOutlined-CtsSTKLU.js";const a=O({__name:"UiChip",props:{variant:{default:"filled"},size:{default:"md"},color:{default:"neutral"},clickable:{type:Boolean,default:!1}},setup(e){return(i,$)=>(z(),U("div",{class:k(["ui-chip",`variant-${i.variant}`,`color-${i.color}`,`size-${i.size}`,{clickable:i.clickable}])},[s(i.$slots,"start-icon"),s(i.$slots,"default"),s(i.$slots,"end-icon")],2))}});a.__docgenInfo={exportName:"default",displayName:"UiChip",description:"",tags:{},props:[{name:"variant",required:!1,type:{name:"union",elements:[{name:'"filled"'},{name:'"outlined"'}]},defaultValue:{func:!1,value:'"filled"'}},{name:"size",required:!1,type:{name:"union",elements:[{name:'"sm"'},{name:'"md"'},{name:'"lg"'}]},defaultValue:{func:!1,value:'"md"'}},{name:"color",required:!1,type:{name:"union",elements:[{name:'"primary"'},{name:'"secondary"'},{name:'"neutral"'}]},defaultValue:{func:!1,value:'"neutral"'}},{name:"clickable",required:!1,type:{name:"boolean"},defaultValue:{func:!1,value:"false"}}],slots:[{name:"start-icon"},{name:"default"},{name:"end-icon"}],sourceFiles:["D:/Programming/Vue/p-work-ui/src/components/UiChip/UiChip.vue"]};const q={component:a,title:"Data display/Chip",tags:["autodocs"]},n={render:e=>({components:{UiChip:a},setup(){return{args:e}},template:`
+import{d as k,c as z,p as c,a as V,l as _,o as $}from"./vue.esm-bundler-DRdyH_Db.js";import{S as B}from"./SearchOutlined-CtsSTKLU.js";const i=k({__name:"UiChip",props:{variant:{default:"filled"},size:{default:"md"},color:{default:"neutral"},clickable:{type:Boolean,default:!1},weight:{default:"400"}},setup(e){const a=e,U=["ui-chip",`variant-${a.variant}`,`color-${a.color}`,`size-${a.size}`,`ui-s-weight-${a.weight}`,{clickable:a.clickable}];return(s,q)=>($(),z("div",{class:_(U)},[c(s.$slots,"start-icon"),V("span",null,[c(s.$slots,"default")]),c(s.$slots,"end-icon")]))}});i.__docgenInfo={exportName:"default",displayName:"UiChip",description:"",tags:{},props:[{name:"variant",required:!1,type:{name:"union",elements:[{name:'"filled"'},{name:'"outlined"'}]},defaultValue:{func:!1,value:'"filled"'}},{name:"size",required:!1,type:{name:"union",elements:[{name:'"sm"'},{name:'"md"'},{name:'"lg"'}]},defaultValue:{func:!1,value:'"md"'}},{name:"color",required:!1,type:{name:"union",elements:[{name:'"primary"'},{name:'"secondary"'},{name:'"neutral"'}]},defaultValue:{func:!1,value:'"neutral"'}},{name:"clickable",required:!1,type:{name:"boolean"},defaultValue:{func:!1,value:"false"}},{name:"weight",required:!1,type:{name:"union",elements:[{name:'"400"'},{name:'"500"'},{name:'"600"'}]},defaultValue:{func:!1,value:'"400"'}}],slots:[{name:"start-icon"},{name:"default"},{name:"end-icon"}],sourceFiles:["D:/Programming/Vue/p-work-ui/src/components/UiChip/UiChip.vue"]};const I={component:i,title:"Data display/Chip",tags:["autodocs"]},n={render:e=>({components:{UiChip:i},setup(){return{args:e}},template:`
          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
             <ui-chip>Chip</ui-chip>
             <ui-chip variant="outlined">Chip</ui-chip>
-         </div>`})},t={render:e=>({components:{UiChip:a},setup(){return{args:e}},template:`
+         </div>`})},t={render:e=>({components:{UiChip:i},setup(){return{args:e}},template:`
          <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-chip size="sm">Chip</ui-chip>
             <ui-chip size="md">Chip</ui-chip>
             <ui-chip size="lg">Chip</ui-chip>
-         </div>`})},r={render:e=>({components:{UiChip:a,SearchOutlined:V},setup(){return{args:e}},template:`
+         </div>`})},r={render:e=>({components:{UiChip:i,SearchOutlined:B},setup(){return{args:e}},template:`
          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem ">
             <ui-chip>
                <template #start-icon><SearchOutlined /></template>Start icon
@@ -26,7 +26,7 @@ import{d as O,c as U,p as s,l as k,o as z}from"./vue.esm-bundler-DRdyH_Db.js";im
             <ui-chip>
                <SearchOutlined />
             </ui-chip>
-         </div>`})},p={render:e=>({components:{UiChip:a},setup(){return{args:e}},template:`
+         </div>`})},p={render:e=>({components:{UiChip:i},setup(){return{args:e}},template:`
          <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
             <ui-chip>Chip</ui-chip>
             <ui-chip variant="outlined">Chip</ui-chip>
@@ -39,10 +39,10 @@ import{d as O,c as U,p as s,l as k,o as z}from"./vue.esm-bundler-DRdyH_Db.js";im
             <ui-chip color="secondary">Chip</ui-chip>
             <ui-chip color="secondary" variant="outlined">Chip</ui-chip>
          </div>
-      `})},l={render:e=>({components:{UiChip:a},setup(){return{args:e}},template:`
+      `})},l={render:e=>({components:{UiChip:i},setup(){return{args:e}},template:`
          <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
             <ui-chip clickable>Click on me</ui-chip>
-         </div>`})};var c,o,u;n.parameters={...n.parameters,docs:{...(c=n.parameters)==null?void 0:c.docs,source:{originalSource:`{
+         </div>`})};var o,u,m;n.parameters={...n.parameters,docs:{...(o=n.parameters)==null?void 0:o.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiChip
@@ -58,7 +58,7 @@ import{d as O,c as U,p as s,l as k,o as z}from"./vue.esm-bundler-DRdyH_Db.js";im
             <ui-chip variant="outlined">Chip</ui-chip>
          </div>\`
   })
-}`,...(u=(o=n.parameters)==null?void 0:o.docs)==null?void 0:u.source}}};var m,d,h;t.parameters={...t.parameters,docs:{...(m=t.parameters)==null?void 0:m.docs,source:{originalSource:`{
+}`,...(m=(u=n.parameters)==null?void 0:u.docs)==null?void 0:m.source}}};var d,h,f;t.parameters={...t.parameters,docs:{...(d=t.parameters)==null?void 0:d.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiChip
@@ -75,7 +75,7 @@ import{d as O,c as U,p as s,l as k,o as z}from"./vue.esm-bundler-DRdyH_Db.js";im
             <ui-chip size="lg">Chip</ui-chip>
          </div>\`
   })
-}`,...(h=(d=t.parameters)==null?void 0:d.docs)==null?void 0:h.source}}};var f,g,v;r.parameters={...r.parameters,docs:{...(f=r.parameters)==null?void 0:f.docs,source:{originalSource:`{
+}`,...(f=(h=t.parameters)==null?void 0:h.docs)==null?void 0:f.source}}};var g,v,y;r.parameters={...r.parameters,docs:{...(g=r.parameters)==null?void 0:g.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiChip,
@@ -107,7 +107,7 @@ import{d as O,c as U,p as s,l as k,o as z}from"./vue.esm-bundler-DRdyH_Db.js";im
             </ui-chip>
          </div>\`
   })
-}`,...(v=(g=r.parameters)==null?void 0:g.docs)==null?void 0:v.source}}};var y,C,x;p.parameters={...p.parameters,docs:{...(y=p.parameters)==null?void 0:y.docs,source:{originalSource:`{
+}`,...(y=(v=r.parameters)==null?void 0:v.docs)==null?void 0:y.source}}};var C,x,w;p.parameters={...p.parameters,docs:{...(C=p.parameters)==null?void 0:C.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiChip
@@ -132,7 +132,7 @@ import{d as O,c as U,p as s,l as k,o as z}from"./vue.esm-bundler-DRdyH_Db.js";im
          </div>
       \`
   })
-}`,...(x=(C=p.parameters)==null?void 0:C.docs)==null?void 0:x.source}}};var w,S,b;l.parameters={...l.parameters,docs:{...(w=l.parameters)==null?void 0:w.docs,source:{originalSource:`{
+}`,...(w=(x=p.parameters)==null?void 0:x.docs)==null?void 0:w.source}}};var S,b,O;l.parameters={...l.parameters,docs:{...(S=l.parameters)==null?void 0:S.docs,source:{originalSource:`{
   render: args => ({
     components: {
       UiChip
@@ -147,4 +147,4 @@ import{d as O,c as U,p as s,l as k,o as z}from"./vue.esm-bundler-DRdyH_Db.js";im
             <ui-chip clickable>Click on me</ui-chip>
          </div>\`
   })
-}`,...(b=(S=l.parameters)==null?void 0:S.docs)==null?void 0:b.source}}};const E=["Variant","Sizes","Icons","Colors","Clickable"];export{l as Clickable,p as Colors,r as Icons,t as Sizes,n as Variant,E as __namedExportsOrder,q as default};
+}`,...(O=(b=l.parameters)==null?void 0:b.docs)==null?void 0:O.source}}};const D=["Variant","Sizes","Icons","Colors","Clickable"];export{l as Clickable,p as Colors,r as Icons,t as Sizes,n as Variant,D as __namedExportsOrder,I as default};
