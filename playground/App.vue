@@ -63,6 +63,11 @@ const openModal = () => {
          <ui-chip color="secondary" variant="outlined" size="sm" clickable>
             Chip example
          </ui-chip>
+         <ui-spacing align="center" gap="md">
+            <ui-chip size="sm" rounded>Chip example</ui-chip>
+            <ui-chip size="md" rounded>Chip example</ui-chip>
+            <ui-chip size="lg" rounded>Chip example</ui-chip>
+         </ui-spacing>
       </PlComponent>
       <PlComponent title="Avatar">
          <ui-avatar size="lg" alt="FT" src="../src/components/UiAvatar/male-1.jpg" />

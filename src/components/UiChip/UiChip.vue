@@ -8,6 +8,7 @@ const props = withDefaults(defineProps<UiChipProps>(), {
    size: "md",
    clickable: false,
    weight: "400",
+   rounded: false,
 })
 
 const className = [
@@ -18,6 +19,7 @@ const className = [
    `ui-s-weight-${props.weight}`,
    {
       clickable: props.clickable,
+      rounded: props.rounded
    },
 ]
 </script>

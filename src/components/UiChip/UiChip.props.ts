@@ -4,4 +4,5 @@ export type UiChipProps = {
    color?: "primary" | "secondary" | "neutral"
    clickable?: boolean
    weight?: "400" | "500" | "600"
+   rounded?: boolean
 }

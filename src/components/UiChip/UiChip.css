@@ -167,20 +167,20 @@
 .ui-chip.size-lg {
    gap: 0.6rem;
    border-radius: 0.7rem;
-   padding: 0.8rem 0.9rem;
+   padding: 0.5rem;
+   font-size: 1rem;
 }
 
 .ui-chip.size-lg svg {
-   width: 1.2rem;
-   height: auto;
+   width: 1.1rem;
 }
 
-.ui-chip:has(svg:only-child).size-lg {
-   padding: 0.8rem;
+.ui-chip.size-lg svg:only-child {
+   width: 1.1rem;
 }
 
 .ui-chip.size-lg.rounded {
-   border-radius: 1.4rem;
+   border-radius: 1rem;
 }
 
 /* medium */
@@ -188,20 +188,20 @@
 .ui-chip.size-md {
    gap: 0.5rem;
    border-radius: 0.6rem;
-   padding: 0.6rem 0.7rem;
+   padding: 0.4rem;
+   font-size: 0.9rem;
 }
 
 .ui-chip.size-md svg {
-   width: 1.1rem;
-   height: auto;
+   width: 0.9rem;
 }
 
-.ui-chip:has(svg:only-child).size-md {
-   padding: 0.6rem;
+.ui-chip.size-md svg:only-child {
+   width: 1rem;
 }
 
 .ui-chip.size-md.rounded {
-   border-radius: 1.2rem;
+   border-radius: 0.9rem;
 }
 
 /* small */
@@ -209,18 +209,18 @@
 .ui-chip.size-sm {
    gap: 0.4rem;
    border-radius: 0.5rem;
-   padding: 0.4rem 0.6rem;
+   padding: 0.3rem;
+   font-size: 0.8rem;
 }
 
 .ui-chip.size-sm svg {
-   width: 1rem;
-   height: auto;
+   width: 0.7rem;
 }
 
-.ui-chip:has(svg:only-child).size-sm {
-   padding: 0.4rem;
+.ui-chip.size-sm svg:only-child {
+   width: 0.8rem;
 }
 
 .ui-chip.size-sm.rounded {
-   border-radius: 1rem;
+   border-radius: 0.8rem;
 }
