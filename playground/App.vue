@@ -119,6 +119,11 @@ const openModal = () => {
                Hover me
             </ui-button>
          </ui-spacing>
+         <ui-spacing align="center" gap="md">
+            <ui-button size="sm" rounded>Button</ui-button>
+            <ui-button size="md" rounded>Button</ui-button>
+            <ui-button size="lg" rounded>Button</ui-button>
+         </ui-spacing>
       </PlComponent>
       <PlComponent title="Modal">
          <ui-button @click="openModal">Open modal</ui-button>

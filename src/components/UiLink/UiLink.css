@@ -36,20 +36,6 @@
    color: var(--secondary-light);
 }
 
-/* Weight */
-
-.ui-link.weight-400{
-   font-weight: 400;
-}
-
-.ui-link.weight-500{
-   font-weight: 500;
-}
-
-.ui-link.weight-600{
-   font-weight: 600;
-}
-
 /* Sizes */
 .ui-link.size-lg {
    font-size: 1.1rem;

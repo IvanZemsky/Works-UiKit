@@ -23,7 +23,7 @@ const Tag = as === "router-link" ? RouterLink : as
          `size-${size}`,
          `color-${color}`,
          `hover-${hover}`,
-         `weight-${weight}`,
+         `ui-s-weight-${weight}`,
       ]"
    >
       <slot name="start-icon" />

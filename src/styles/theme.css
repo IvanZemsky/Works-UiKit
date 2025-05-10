@@ -20,3 +20,16 @@
    --inactive: #c1c1c1;
    --base-input-text: #000000;
 }
+
+/* s means 'shared' */
+.ui-s-weight-400{
+   font-weight: 400;
+}
+
+.ui-s-weight-500{
+   font-weight: 500;
+}
+
+.ui-s-weight-600{
+   font-weight: 600;
+}

@@ -3,7 +3,7 @@ export type UiSpacingProps = {
     * If specified as an array or as number, the first value is cross axis spacing, and the second value is main axis spacing
     * @default "md"
     */
-   gap?: "sm" | "md" | "lg" | [number, number]
+   gap?: "sm" | "md" | "lg" | [number, number] | [number]
 
    /**
     * Direction of the spacing

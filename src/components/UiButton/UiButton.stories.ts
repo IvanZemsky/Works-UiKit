@@ -116,4 +116,20 @@ export const Colors: Story = {
    }),
 }
 
+export const Weight: Story = {
+   render: (args) => ({
+      components: { UiButton },
+      setup() {
+         return { args }
+      },
+      template: `
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
+            <ui-button weight="400">Regular</ui-button>
+            <ui-button weight="500">Medium</ui-button>
+            <ui-button weight="600">Semibold</ui-button>
+         </div>
+      `,
+   }),
+}
+
 export default meta

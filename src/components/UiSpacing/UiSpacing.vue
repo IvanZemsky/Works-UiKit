@@ -2,7 +2,7 @@
 import type { UiSpacingProps } from "./UiSpacing.props"
 import "./UiSpacing.css"
 
-withDefaults(defineProps<UiSpacingProps>(), {
+const props = withDefaults(defineProps<UiSpacingProps>(), {
    gap: "md",
    justify: "start",
    align: "start",
@@ -14,50 +14,47 @@ withDefaults(defineProps<UiSpacingProps>(), {
    noShrink: false,
 })
 
-const flexDirectionClass = (
+const className = [
+   "ui-spacing",
+   flexDirectionClass(props.vertical, props.reverse),
+   wrapClass(props.wrap),
+   `justify-${props.justify}`,
+   `align-${props.align}`,
+   `gap-${props.gap}`,
+   {
+      fill: props.fill,
+      grow: props.grow,
+      "no-shrink": props.noShrink,
+   },
+]
+
+function flexDirectionClass(
    vertical: UiSpacingProps["vertical"],
    reverse: UiSpacingProps["reverse"],
-) => {
+) {
    if (vertical && !reverse) return "flex-col"
    if (vertical && reverse) return "flex-col-reverse"
    if (!vertical && reverse) return "flex-row-reverse"
    return "flex-row"
 }
 
-const gapClass = (gap: UiSpacingProps["gap"]) => {
-   if (Array.isArray(gap)) return `${gap[0]}px ${gap[1]}px`
-
-   switch (gap) {
-      case "sm":
-         return "0.5rem"
-      case "md":
-         return "1rem"
-      case "lg":
-         return "1.5rem"
-      default:
-         return "1rem"
+function gapStyle(gap: UiSpacingProps["gap"]) {
+   if (Array.isArray(gap)) {
+      if (gap.length === 2) return `${gap[0]}px ${gap[1]}px`
+      if (gap.length === 1) return `${gap[0]}px`
    }
 }
 
-const wrapClass = (wrap: boolean) => (wrap ? "flex-wrap" : "flex-nowrap")
+function wrapClass(wrap: boolean) {
+   return wrap ? "flex-wrap" : "flex-nowrap"
+}
 </script>
 
 <template>
    <div
-      :class="[
-         'ui-spacing',
-         flexDirectionClass(vertical, reverse),
-         wrapClass(wrap),
-         `justify-${justify}`,
-         `align-${align}`,
-         {
-            fill,
-            grow,
-            'no-shrink': noShrink,
-         },
-      ]"
+      :class="className"
       :style="{
-         gap: gapClass(gap),
+         gap: gapStyle(gap),
       }"
    >
       <slot />

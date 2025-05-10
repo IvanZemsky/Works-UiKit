@@ -9,6 +9,8 @@ const props = withDefaults(defineProps<UiButtonProps>(), {
    variant: "filled",
    size: "md",
    color: "primary",
+   weight: "400",
+   rounded: false,
 })
 
 const { as, variant, size, color } = props
@@ -26,12 +28,14 @@ const hasWave = variant !== "ghost" && variant !== "light"
          `variant-${variant}`,
          `size-${size}`,
          `color-${color}`,
+         `ui-s-weight-${weight}`,
          { wave: isWaveActive && hasWave },
+         { rounded },
       ]"
       @click="handleClick"
    >
       <slot name="start-icon" />
-      <span class="ui-button__text"><slot/></span>
+      <span class="ui-button__text"><slot /></span>
       <slot name="end-icon" />
    </Tag>
 </template>

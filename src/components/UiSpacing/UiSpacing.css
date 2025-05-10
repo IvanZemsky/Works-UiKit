@@ -82,3 +82,17 @@
 .ui-spacing.align-baseline {
    align-items: baseline;
 }
+
+/* gap */
+
+.ui-spacing.gap-sm{
+   gap: 0.5rem;
+}
+
+.ui-spacing.gap-md{
+   gap: 1rem;
+}
+
+.ui-spacing.gap-lg{
+   gap: 1.5rem;
+}
