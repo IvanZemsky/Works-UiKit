@@ -51,24 +51,26 @@ export type { UiTooltipProps } from "./components/UiTooltip/UiTooltip.props"
 import UiModal from "./components/UiModal/UiModal.vue"
 export type { UiModalProps } from "./components/UiModal/UiModal.props"
 
-export {
-   UiButton,
-   UiInput,
-   UiCheck,
-   UiCheckGroup,
-   UiCheckGroupItem,
-   UiRadio,
-   UiRadioGroup,
-   UiRadioGroupItem,
-   UiSelect,
-   UiSelectOption,
-   UiSpacing,
-   UiCard,
-   UiLink,
-   UiChip,
-   UiAvatar,
-   UiSkeleton,
-   UiWrapper,
-   UiTooltip,
-   UiModal,
+export default {
+   install: (app: any) => {
+      app.component("UiButton", UiButton)
+      app.component("UiCheck", UiCheck)
+      app.component("UiCheckGroup", UiCheckGroup)
+      app.component("UiCheckGroupItem", UiCheckGroupItem)
+      app.component("UiInput", UiInput)
+      app.component("UiRadio", UiRadio)
+      app.component("UiRadioGroup", UiRadioGroup)
+      app.component("UiRadioGroupItem", UiRadioGroupItem)
+      app.component("UiSelect", UiSelect)
+      app.component("UiSelectOption", UiSelectOption)
+      app.component("UiSpacing", UiSpacing)
+      app.component("UiCard", UiCard)
+      app.component("UiLink", UiLink)
+      app.component("UiChip", UiChip)
+      app.component("UiAvatar", UiAvatar)
+      app.component("UiSkeleton", UiSkeleton)
+      app.component("UiWrapper", UiWrapper)
+      app.component("UiTooltip", UiTooltip)
+      app.component("UiModal", UiModal)
+   }
 }
