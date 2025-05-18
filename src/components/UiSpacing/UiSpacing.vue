@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import type { UiSpacingProps } from "./UiSpacing.props"
 import "./UiSpacing.css"
+import { RouterLink } from "vue-router";
 
 const props = withDefaults(defineProps<UiSpacingProps>(), {
+   as: "div",
    gap: "md",
    justify: "start",
    align: "start",
@@ -28,6 +30,8 @@ const className = [
    },
 ]
 
+const Tag = props.as === "router-link" ? RouterLink : props.as
+
 function flexDirectionClass(
    vertical: UiSpacingProps["vertical"],
    reverse: UiSpacingProps["reverse"],
@@ -51,12 +55,12 @@ function wrapClass(wrap: boolean) {
 </script>
 
 <template>
-   <div
+   <Tag
       :class="className"
       :style="{
          gap: gapStyle(gap),
       }"
    >
       <slot />
-   </div>
+   </Tag>
 </template>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from "vue-router";
 import "./UiAvatar.css"
 import type { UiAvatarProps } from "./UiAvatar.props"
 import { ref, onMounted } from "vue"
@@ -14,6 +15,8 @@ const { alt, src } = props
 const imageLoaded = ref(false)
 
 const avatarText = setAvatarText(alt)
+
+const Tag = props.as === "router-link" ? RouterLink : props.as
 
 onMounted(() => {
    if (src) {
@@ -44,7 +47,7 @@ function setAvatarText(alt: string) {
 </script>
 
 <template>
-   <div
+   <Tag
       :class="['ui-avatar', `size-${size}`]"
       :style="`background-image: ${src && !imageLoaded ? 'none' : `url(${src})`}`"
    >
@@ -57,5 +60,5 @@ function setAvatarText(alt: string) {
          @error="handleImageError"
       />
       <span v-else-if="src && !imageLoaded">{{ avatarText }}</span>
-   </div>
+   </Tag>
 </template>

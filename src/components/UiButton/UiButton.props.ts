@@ -1,5 +1,5 @@
 export type UiButtonProps = {
-   as?: "button" | "a" | "router-link"
+   as?: "router-link" | keyof HTMLElementTagNameMap
    variant?: "filled" | "outlined" | "ghost" | "light"
    size?: "sm" | "md" | "lg"
    color?: "primary" | "secondary"

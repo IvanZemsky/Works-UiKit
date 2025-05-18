@@ -1,4 +1,5 @@
 export type UiAvatarProps = {
+   as?: "router-link" | keyof HTMLElementTagNameMap
    size?: "sm" | "md" | "lg"
    /**
     * Link to an image

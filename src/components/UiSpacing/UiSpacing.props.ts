@@ -1,4 +1,5 @@
 export type UiSpacingProps = {
+   as?: "router-link" | keyof HTMLElementTagNameMap
    /**
     * If specified as an array or as number, the first value is cross axis spacing, and the second value is main axis spacing
     * @default "md"
