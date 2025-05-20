@@ -98,7 +98,7 @@ const openModal = () => {
          </ui-tooltip>
       </PlComponent>
       <PlComponent title="Button">
-         <ui-button as="router-link" to="/">Button</ui-button>
+         <ui-button to="/">Button</ui-button>
          <ui-button variant="outlined">Button</ui-button>
          <ui-button variant="ghost">Button</ui-button>
          <ui-button variant="light">Button</ui-button>
