@@ -51,6 +51,8 @@ export type { UiTooltipProps } from "./components/UiTooltip/UiTooltip.props"
 import UiModal from "./components/UiModal/UiModal.vue"
 export type { UiModalProps } from "./components/UiModal/UiModal.props"
 
+import UiFilePicker from "./components/UiFilePicker/UiFilePicker.vue"
+
 export default {
    install: (app: any) => {
       app.component("UiButton", UiButton)
@@ -72,5 +74,6 @@ export default {
       app.component("UiWrapper", UiWrapper)
       app.component("UiTooltip", UiTooltip)
       app.component("UiModal", UiModal)
-   }
+      app.component("UiFilePicker", UiFilePicker)
+   },
 }

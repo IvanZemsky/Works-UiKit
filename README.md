@@ -34,6 +34,7 @@ app.use(WorksUi)
 -  Check
 -  Check Group
 -  Chip
+-  File Picker
 -  Input
 -  Radio
 -  Radio Group
