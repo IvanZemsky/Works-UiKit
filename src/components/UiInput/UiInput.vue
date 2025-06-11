@@ -7,6 +7,8 @@ defineOptions({
    inheritAttrs: false,
 })
 
+const model = defineModel<string>()
+
 withDefaults(defineProps<UiInputProps>(), {
    variant: "outlined",
    size: "md",
@@ -30,10 +32,6 @@ const { class: className, style, ...inputAttrs } = useAttrs()
       <div v-if="$slots.icon" class="ui-input__icon-wrap">
          <slot name="icon" />
       </div>
-      <input
-         v-bind="inputAttrs"
-         type="text"
-         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
-      />
+      <input v-bind="inputAttrs" type="text" v-model="model" />
    </div>
 </template>
