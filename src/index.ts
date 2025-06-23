@@ -53,6 +53,9 @@ export type { UiModalProps } from "./components/UiModal/UiModal.props"
 
 import UiFilePicker from "./components/UiFilePicker/UiFilePicker.vue"
 
+import UiTextarea from "./components/UiTextarea/UiTextarea.vue"
+export type { UiTextareaProps } from "./components/UiTextarea/UiTextarea.props"
+
 export default {
    install: (app: any) => {
       app.component("UiButton", UiButton)
@@ -75,5 +78,6 @@ export default {
       app.component("UiTooltip", UiTooltip)
       app.component("UiModal", UiModal)
       app.component("UiFilePicker", UiFilePicker)
+      app.component("UiTextarea", UiTextarea)
    },
 }

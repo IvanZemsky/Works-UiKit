@@ -10,10 +10,12 @@ import UiTooltip from "../src/components/UiTooltip/UiTooltip.vue"
 import UiModal from "../src/components/UiModal/UiModal.vue"
 import UiCard from "../src/components/UiCard/UiCard.vue"
 import UiSpacing from "../src/components/UiSpacing/UiSpacing.vue"
+import UiInput from "../src/components/UiInput/UiInput.vue"
 import { MessageOutlined } from "@vicons/antd"
 import { ref } from "vue"
 
 const modalOpened = ref(false)
+const inputValue = ref("")
 
 const openModal = () => {
    modalOpened.value = true
@@ -135,6 +137,10 @@ const openModal = () => {
          <ui-modal v-model="modalOpened" teleport="#modal">
             <ui-card>Modal inserted to #modal</ui-card>
          </ui-modal>
+      </PlComponent>
+      <PlComponent title="Input">
+         <p>{{ inputValue }}</p>
+         <ui-input v-model="inputValue"/>
       </PlComponent>
    </div>
 </template>

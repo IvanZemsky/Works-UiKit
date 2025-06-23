@@ -73,4 +73,19 @@ export const Size: Story = {
    }),
 }
 
+export const MinMax: Story = {
+   render: (args) => ({
+      components: { UiInput, SearchOutlined },
+      setup() {
+         return { args }
+      },
+      template: `
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem">
+            <ui-input type="number" size="md" min="1" max="100" placeholder="Number"/>
+            <ui-input type="text" size="md" minlength="0" maxlength="15" placeholder="Max: 15"/>
+         </div>
+      `,
+   }),
+}
+
 export default meta
