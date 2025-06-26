@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { handleTextInput } from "@/lib/helpers/inputs"
 import "./UiTextarea.css"
 import type { UiTextareaProps } from "./UiTextarea.props"
 import { useAttrs } from "vue"
@@ -19,21 +20,7 @@ const { class: className, style, ...inputAttrs } = useAttrs()
 
 function handleInput(event: Event) {
    const input = event.target as HTMLInputElement
-
-   const minLength =
-      inputAttrs.minlength !== undefined ? parseFloat(String(inputAttrs.min)) : undefined
-   const maxLength =
-      inputAttrs.maxlength !== undefined ? parseFloat(String(inputAttrs.max)) : undefined
-
-   if (maxLength !== undefined && input.value.length > maxLength) {
-      input.value = String(model.value)
-      return
-   } else if (minLength !== undefined && input.value.length < minLength) {
-      input.value = String(model.value)
-      return
-   }
-
-   model.value = input.value
+   handleTextInput(input, inputAttrs, model)
 }
 </script>
 

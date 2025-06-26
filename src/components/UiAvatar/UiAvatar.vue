@@ -8,6 +8,7 @@ const props = withDefaults(defineProps<UiAvatarProps>(), {
    size: "md",
    alt: "",
    src: "",
+   as: "div",
 })
 
 const { alt, src } = props

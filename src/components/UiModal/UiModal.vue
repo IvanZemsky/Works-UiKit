@@ -41,7 +41,7 @@ onUnmounted(() => {
 
 <template>
    <Teleport :to="teleport">
-      <transition name="ui-modal-fade">
+      <transition name="ui-fade">
          <div v-bind="attrs" class="ui-modal" v-show="open" @click="handleClose">
             <div @click.stop="preventClose">
                <slot />

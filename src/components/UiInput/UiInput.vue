@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { handleNumInput, handleTextInput } from "@/lib/helpers/inputs"
 import "./UiInput.css"
 import type { UiInputProps } from "./UiInput.props"
 import { useAttrs } from "vue"
@@ -7,7 +8,9 @@ defineOptions({
    inheritAttrs: false,
 })
 
-const model = defineModel<string>()
+const model = defineModel<string>({
+   default: "",
+})
 
 withDefaults(defineProps<UiInputProps>(), {
    variant: "outlined",
@@ -17,50 +20,18 @@ withDefaults(defineProps<UiInputProps>(), {
 
 const { class: className, style, ...inputAttrs } = useAttrs()
 
+const textInputs = ["text", "password", "email"]
+
 function handleInput(event: Event) {
    const input = event.target as HTMLInputElement
 
    if (input.type === "number") {
-      const num = parseFloat(input.value)
-      const min =
-         inputAttrs.min !== undefined ? parseFloat(String(inputAttrs.min)) : undefined
-      const max =
-         inputAttrs.max !== undefined ? parseFloat(String(inputAttrs.max)) : undefined
-
-      if (
-         input.value === "" ||
-         (!isNaN(num) &&
-            (min === undefined || num >= min) &&
-            (max === undefined || num <= max))
-      ) {
-         model.value = input.value
-      } else {
-         input.value = String(model.value)
-      }
-
-      return
+      handleNumInput(input, inputAttrs, model)
    }
 
-   if (input.type === "text" || input.type === "password" || input.type === "email") {
-      const minLength =
-         inputAttrs.minlength !== undefined
-            ? parseFloat(String(inputAttrs.min))
-            : undefined
-      const maxLength =
-         inputAttrs.maxlength !== undefined
-            ? parseFloat(String(inputAttrs.max))
-            : undefined
-
-      if (maxLength !== undefined && input.value.length > maxLength) {
-         input.value = String(model.value)
-         return
-      } else if (minLength !== undefined && input.value.length < minLength) {
-         input.value = String(model.value)
-         return
-      }
+   if (textInputs.includes(input.type)) {
+      handleTextInput(input, inputAttrs, model)
    }
-
-   model.value = input.value
 }
 </script>
 

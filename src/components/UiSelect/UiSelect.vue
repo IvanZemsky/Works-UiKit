@@ -37,7 +37,7 @@ const handleOpenClick = () => {
       >
          {{ selected || placeholder }}
       </ui-button>
-      <transition name="ui-select-fade">
+      <transition name="ui-fade-vertical">
          <ui-spacing v-show="isOpen" class="ui-select__options" vertical gap="sm">
             <slot />
          </ui-spacing>

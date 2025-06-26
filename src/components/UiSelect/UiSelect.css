@@ -19,31 +19,3 @@
    border-radius: 10px;
    z-index: 998;
 }
-
-/* Transition */
-
-.ui-select-fade-enter-active,
-.ui-select-fade-leave-active {
-   transition: all 0.3s ease;
-   overflow: hidden;
-}
-
-.ui-select-fade-enter-from {
-   opacity: 0;
-   transform: translateY(20px);
-}
-
-.ui-select-fade-enter-to {
-   opacity: 1;
-   transform: translateY(0);
-}
-
-.ui-select-fade-leave-from {
-   opacity: 1;
-   transform: translateY(0);
-}
-
-.ui-select-fade-leave-to {
-   opacity: 0;
-   transform: translateY(20px);
-}

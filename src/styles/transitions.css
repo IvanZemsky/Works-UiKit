@@ -1,0 +1,50 @@
+/* Vertical fade */
+
+.ui-fade-vertical-enter-active,
+.ui-fade-vertical-leave-active {
+   transition: all 0.3s ease;
+   overflow: hidden;
+}
+
+.ui-fade-vertical-enter-from {
+   opacity: 0;
+   transform: translateY(20px);
+}
+
+.ui-fade-vertical-enter-to {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.ui-fade-vertical-leave-from {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.ui-fade-vertical-leave-to {
+   opacity: 0;
+   transform: translateY(20px);
+}
+
+/* Fade */
+
+.ui-fade-enter-active,
+.ui-fade-leave-active {
+   transition: opacity 0.3s ease;
+}
+
+.ui-fade-enter-from {
+   opacity: 0;
+}
+
+.ui-fade-enter-to {
+   opacity: 1;
+}
+
+.ui-fade-leave-from {
+   opacity: 1;
+}
+
+.ui-fade-leave-to {
+   opacity: 0;
+}

@@ -11,11 +11,13 @@ import UiModal from "../src/components/UiModal/UiModal.vue"
 import UiCard from "../src/components/UiCard/UiCard.vue"
 import UiSpacing from "../src/components/UiSpacing/UiSpacing.vue"
 import UiInput from "../src/components/UiInput/UiInput.vue"
+import UiToast from "../src/components/UiToast/UiToast.vue"
 import { MessageOutlined } from "@vicons/antd"
 import { ref } from "vue"
 
 const modalOpened = ref(false)
 const inputValue = ref("")
+const toastOpened = ref(false)
 
 const openModal = () => {
    modalOpened.value = true
@@ -140,7 +142,15 @@ const openModal = () => {
       </PlComponent>
       <PlComponent title="Input">
          <p>{{ inputValue }}</p>
-         <ui-input v-model="inputValue"/>
+         <ui-input v-model="inputValue" minlength="2" maxlength="10" />
+      </PlComponent>
+      <PlComponent title="Toast">
+         <ui-toast v-model="toastOpened" class="red" :timeout="3000">
+            <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. A soluta
+            </p>
+         </ui-toast>
+         <ui-button @click="toastOpened = true">Open Toast</ui-button>
       </PlComponent>
    </div>
 </template>

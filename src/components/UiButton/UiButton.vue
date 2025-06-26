@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import "./UiButton.css"
 import type { UiButtonProps } from "./UiButton.props"
-import { useWaveEffect } from "../../lib/useWaveEffect"
+import { useWaveEffect } from "../../lib/hooks/useWaveEffect"
 import { RouterLink } from "vue-router"
 
 const props = withDefaults(defineProps<UiButtonProps>(), {
