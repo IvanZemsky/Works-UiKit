@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onUnmounted, ref, watch } from "vue"
 
-type UiToastProps = {
+export type UiToastProps = {
    timeout?: number
    positionX?: "left" | "right"
    positionY?: "top" | "bottom"

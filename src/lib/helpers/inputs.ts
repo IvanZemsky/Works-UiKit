@@ -37,6 +37,7 @@ function parseNumAttr(attr: unknown | undefined) {
    }
 }
 
+// два похожтх метода!!!
 function isNumInputAvailable(
    inputValue: number,
    min: number | undefined,

@@ -18,30 +18,26 @@ import "works-ui/styles.css"
 
 It contains all styles of components, theme variables and a simple reset of the basic browser styles.
 You don't have to import it if you want to create all the styles yourself.
-
-You also have to register library in `main.ts` file because it uses global components:
-```
-import WorksUi from "works-ui"
-
-app.use(WorksUi)
 ```
 
 ### Completed components:
 
--  Avatar
--  Button
--  Card
--  Check
--  Check Group
--  Chip
--  File Picker
--  Input
--  Radio
--  Radio Group
--  Link
--  Modal
--  Select
--  Skeleton
--  Spacing
--  Tooltip
--  Wrapper
+- Avatar
+- Button
+- Card
+- Check
+- Check Group
+- Chip
+- File Picker
+- Input
+- Radio
+- Radio Group
+- Link
+- Modal
+- Select
+- Skeleton
+- Spacing
+- Textarea
+- Toast
+- Tooltip
+- Wrapper
