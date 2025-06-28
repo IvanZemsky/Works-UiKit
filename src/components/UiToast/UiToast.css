@@ -1,0 +1,55 @@
+.ui-toast {
+   position: fixed;
+   padding: 1rem;
+   border-radius: 0.5rem;
+   overflow: hidden;
+   border: 1px solid;
+   z-index: 999;
+}
+
+.ui-toast::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 4px;
+   height: 100%;
+}
+
+.ui-toast.position-right {
+   right: 1rem;
+}
+
+.ui-toast.position-left {
+   left: 1rem;
+}
+
+.ui-toast.position-top {
+   top: 1rem;
+}
+
+.ui-toast.position-bottom {
+   bottom: 1rem;
+}
+
+/* Colors */
+
+/* primary */
+.ui-toast.color-primary {
+   background-color: var(--primary-contrast);
+   border-color: var(--primary-dark);
+}
+
+.ui-toast.color-primary::before {
+   background-color: var(--primary-main);
+}
+
+/* critical */
+.ui-toast.color-critical {
+   background-color: var(--critical-contrast);
+   border-color: var(--critical-dark);
+}
+
+.ui-toast.color-critical::before {
+   background-color: var(--critical-main);
+}

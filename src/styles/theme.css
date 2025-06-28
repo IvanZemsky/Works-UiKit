@@ -17,6 +17,12 @@
    --neutral-extra-light: #ffffff;
    --neutral-dark: #525252;
 
+   --critical-main: #ff0000;
+   --critical-contrast: #ffffff;
+   --critical-light: #ff4d4d;
+   --critical-extra-light: #ffcccc;
+   --critical-dark: #cc0000;
+
    --inactive: #c1c1c1;
    --base-input-text: #000000;
 }

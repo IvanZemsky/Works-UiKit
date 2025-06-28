@@ -222,6 +222,104 @@
    }
 }
 
+/* Critical */
+
+.ui-button.color-critical {
+   box-shadow: 0 0 0 0 var(--critical-light);
+}
+
+/* filled */
+.ui-button.color-critical.variant-filled {
+   background-color: var(--critical-main);
+   border-color: var(--critical-main);
+   color: var(--critical-contrast);
+}
+
+/* filled:hover */
+@media screen and (hover: hover) {
+   .ui-button.color-critical.variant-filled:hover {
+      background-color: var(--critical-dark);
+      border-color: var(--critical-dark);
+   }
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-critical.variant-filled:active {
+      background-color: var(--critical-dark);
+      border-color: var(--critical-dark);
+   }
+}
+
+/* outlined */
+.ui-button.color-critical.variant-outlined {
+   background-color: var(--critical-contrast);
+   border-color: var(--critical-main);
+   color: var(--critical-main);
+}
+
+/* outlined:hover */
+@media screen and (hover: hover) {
+   .ui-button.color-critical.variant-outlined:hover {
+      border-color: var(--critical-dark);
+      color: var(--critical-dark);
+   }
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-critical.variant-outlined:active {
+      border-color: var(--critical-dark);
+      color: var(--critical-dark);
+   }
+}
+
+/* ghost */
+.ui-button.color-critical.variant-ghost {
+   background-color: transparent;
+   border-color: transparent;
+   color: var(--critical-main);
+}
+
+@media screen and (hover: hover) {
+   .ui-button.color-critical.variant-ghost:hover {
+      background-color: var(--critical-extra-light);
+   }
+}
+.ui-button.color-critical.variant-ghost:active {
+   background-color: var(--critical-light);
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-critical.variant-ghost:active {
+      background-color: var(--critical-extra-light);
+   }
+}
+
+/* light */
+
+.ui-button.color-critical.variant-light {
+   background-color: var(--critical-extra-light);
+   border-color: var(--critical-extra-light);
+   color: var(--critical-dark);
+}
+
+@media screen and (hover: hover) {
+   .ui-button.color-critical.variant-light:hover {
+      background-color: var(--critical-extra-light);
+      filter: brightness(1.05);
+   }
+}
+.ui-button.color-critical.variant-light:active {
+   background-color: var(--critical-extra-light);
+   filter: brightness(0.98);
+}
+
+@media screen and (hover: none) {
+   .ui-button.color-critical.variant-light:active {
+      background-color: var(--critical-extra-light);
+      filter: brightness(0.98);
+   }
+}
+
 /* Sizes */
 
 /* large */

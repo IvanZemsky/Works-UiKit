@@ -145,7 +145,7 @@ const openModal = () => {
          <ui-input v-model="inputValue" minlength="2" maxlength="10" />
       </PlComponent>
       <PlComponent title="Toast">
-         <ui-toast v-model="toastOpened" class="red" :timeout="3000">
+         <ui-toast color="critical" v-model="toastOpened" class="red" :timeout="3000">
             <p>
                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A soluta
             </p>

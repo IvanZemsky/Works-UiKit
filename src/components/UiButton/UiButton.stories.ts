@@ -112,6 +112,12 @@ export const Colors: Story = {
             <ui-button color="secondary" variant="ghost">Button</ui-button>
             <ui-button variant="light" color="secondary">Button</ui-button>
          </div>
+         <div style="display: flex; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem">
+            <ui-button color="critical">Button</ui-button>
+            <ui-button color="critical" variant="outlined">Button</ui-button>
+            <ui-button color="critical" variant="ghost">Button</ui-button>
+            <ui-button variant="light" color="critical">Button</ui-button>
+         </div>
       `,
    }),
 }
