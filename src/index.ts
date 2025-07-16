@@ -77,3 +77,7 @@ export type { UiTextareaProps } from "@/components/UiTextarea/UiTextarea.props"
 import UiToast from "@/components/UiToast/UiToast.vue"
 export { UiToast }
 export type { UiToastProps } from "@/components/UiToast/UiToast.vue"
+
+export {useWaveEffect} from "@/lib/composables/useWaveEffect"
+export {useMediaQuery} from "@/lib/composables/useMediaQuery"
+export {useInject} from "@/lib/composables/useInject"

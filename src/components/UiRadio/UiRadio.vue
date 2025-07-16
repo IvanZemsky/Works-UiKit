@@ -7,6 +7,8 @@ defineOptions({
    inheritAttrs: false,
 })
 
+const model = defineModel()
+
 withDefaults(defineProps<UiRadioProps>(), {
    size: "md",
 })
@@ -17,11 +19,11 @@ const { class: className, style, ...inputAttrs } = useAttrs()
 <template>
    <div :class="['ui-radio', `size-${size}`, className]" :style="(style as string)">
       <input
+         v-model="model"
          v-bind="inputAttrs"
          type="radio"
          :id="(inputAttrs.id as string)"
          :name="(inputAttrs.name as string)"
-         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       />
       <label v-if="label" :for="(inputAttrs.id as string)">{{ label }}</label>
    </div>

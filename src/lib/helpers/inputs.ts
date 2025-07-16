@@ -3,7 +3,7 @@ import type { ModelRef } from "vue"
 export function handleNumInput(
    input: HTMLInputElement,
    attrs: Record<string, unknown>,
-   model: ModelRef<string | undefined>,
+   model: ModelRef<string | number | undefined>,
 ) {
    const inputValue = parseFloat(input.value)
    const min = parseNumAttr(String(attrs.min))
@@ -19,7 +19,7 @@ export function handleNumInput(
 export function handleTextInput(
    input: HTMLInputElement,
    attrs: Record<string, unknown>,
-   model: ModelRef<string | undefined>,
+   model: ModelRef<string | number | undefined>,
 ) {
    const minLength = parseNumAttr(attrs.minlength)
    const maxLength = parseNumAttr(attrs.maxlength)
