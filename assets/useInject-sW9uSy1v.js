@@ -1,0 +1,1 @@
+import{a as n}from"./vue.esm-bundler-BYAC-X9_.js";function c(r,o,e){const s=`'${String(r)}' was not provided`;if(o!==void 0)return n(r,o);const t=n(r);if(t===void 0)throw new Error(s);return t}export{c as u};
